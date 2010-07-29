@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100728223604) do
+ActiveRecord::Schema.define(:version => 20100729185207) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(:version => 20100728223604) do
     t.string   "phone_work"
     t.string   "address"
     t.string   "city"
-    t.string   "state_province"
+    t.integer  "state_province_id"
     t.string   "postal_code"
     t.integer  "country_id"
     t.datetime "created_at"
@@ -62,6 +62,9 @@ ActiveRecord::Schema.define(:version => 20100728223604) do
     t.string   "stage_lastname"
     t.string   "stage_firstname"
     t.integer  "primary_phone_choice"
+    t.string   "phone_cell_ext"
+    t.string   "phone_home_ext"
+    t.string   "phone_work_ext"
   end
 
   create_table "state_provinces", :force => true do |t|

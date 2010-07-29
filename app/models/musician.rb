@@ -13,6 +13,10 @@ class Musician < ActiveRecord::Base
     phones = [self.phone_cell,self.phone_home,self.phone_work]   
     phones[self.primary_phone_choice.to_i] if self.primary_phone_choice
   end
+  def phone_ext #same as phone
+    exts = [self.phone_cell_ext,self.phone_home_ext,self.phone_work_ext]   
+    exts[self.primary_phone_choice.to_i] if self.primary_phone_choice
+  end
 
   def names_format
     self.firstname = firstname.titleize
@@ -21,10 +25,26 @@ class Musician < ActiveRecord::Base
   end
   
   def phones_strip
-    self.phone_cell = phone_cell.gsub(/[^0-9x]/, "") unless phone_cell.nil?
-    self.phone_home = phone_home.gsub(/[^0-9x]/, "") unless phone_home.nil?
-    self.phone_work = phone_work.gsub(/[^0-9x]/, "") unless phone_work.nil?
+    #ph_cell = phone_cell.downcase.gsub(/[^0-9x]/, "") unless phone_cell.nil?
+    unless phone_cell.blank?
+      ph_c = strip_and_split_ext(phone_cell)
+      self.phone_cell = ph_c[0]
+      self.phone_cell_ext = ph_c[1] if ph_c[1]
+    end
+    
+    unless phone_home.blank?
+      ph_h = strip_and_split_ext(phone_home)
+      self.phone_home = ph_h[0]
+      self.phone_home_ext = ph_h[1] if ph_h[1]
+    end
+    
+    unless phone_work.blank?  
+      ph_w = strip_and_split_ext(phone_work)
+      self.phone_work = ph_w[0]
+      self.phone_work_ext = ph_w[1] if ph_w[1]
+    end
   end
+ 
   
   def primary_phone_exists
     unless self.phone_cell.blank? && self.phone_home.blank? && self.phone_work.blank?
@@ -54,4 +74,18 @@ class Musician < ActiveRecord::Base
       errors.add_to_base "At least one phone number number must be entered"
     end
   end  
+  
+  private
+  def strip_and_split_ext(p)
+    unless p.blank?
+      ph_arr = p.downcase.gsub(/[^0-9x]/, "").split('x') 
+      phone = ph_arr[0].strip
+      ext = ph_arr[1].strip if ph_arr[1]
+      arr = Array.new
+      arr << phone
+      arr << ext
+      arr
+    end
+  end
+  
 end

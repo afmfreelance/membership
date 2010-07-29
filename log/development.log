@@ -8223,3 +8223,1186 @@ Completed in 35ms (View: 12, DB: 15) | 200 OK [http://localhost/musicians/2]
   [4;36;1mMusician Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
   [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'hendrix') LIMIT 1[0m
   [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'plummer') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 12:33:43) [GET]
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.2ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 43ms (View: 21, DB: 15) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (117.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:48:34) [GET]
+  [4;36;1mMusician Load (280.7ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (228.5ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (6.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (113.6ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 4014ms (View: 2816, DB: 747) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:50:01) [GET]
+  [4;36;1mMusician Load (1.2ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (15.7ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (19.5ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 1077ms (View: 823, DB: 37) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 14:50:59) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 445ms (View: 442, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:51:16) [GET]
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;36;1mMusician Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 35ms (View: 21, DB: 6) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 14:51:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (20.1ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (16.4ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (235.0ms)
+Completed in 248ms (View: 198, DB: 43) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 14:51:38) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222-222-2222 x 542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (24.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMusician Update (262.3ms)[0m   [0mUPDATE `musicians` SET `phone_work` = '2222222222x542', `updated_at` = '2010-07-29 18:51:38' WHERE `id` = 2[0m
+  [4;36;1mSQL (100.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 405ms (DB: 390) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 14:51:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.9ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.6ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 126ms (View: 111, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:51:43) [GET]
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;36;1mMusician Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 37ms (View: 16, DB: 15) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (22.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (281.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMusicians (20100728181041)
+Migrating to CreateCountries (20100728181259)
+Migrating to CreateLocals (20100728181645)
+Migrating to CountryAbbr (20100728184008)
+Migrating to LocalAddEmails (20100728194858)
+Migrating to LocalAddSortCol (20100728195743)
+Migrating to Suffix (20100728215418)
+Migrating to CreateStateProvinces (20100728222316)
+Migrating to PrimaryPhone (20100728223604)
+Migrating to PhoneExt (20100729185207)
+  [4;35;1mSQL (392.4ms)[0m   [0mALTER TABLE `musicians` ADD `phone_cell_ext` varchar(255)[0m
+  [4;36;1mSQL (37.6ms)[0m   [0;1mALTER TABLE `musicians` ADD `phone_home_ext` varchar(255)[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mALTER TABLE `musicians` ADD `phone_work_ext` varchar(255)[0m
+  [4;36;1mSQL (35.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100729185207')[0m
+  [4;35;1mSQL (15.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mSQL (19.8ms)[0m   [0mdescribe `countries`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `countries`[0m
+  [4;35;1mSQL (19.3ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mdescribe `locals`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `locals`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `musicians`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `musicians`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `state_provinces`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `state_provinces`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:56:47) [GET]
+  [4;35;1mMusician Load (28.6ms)[0m   [0mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 95ms (View: 54, DB: 34) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 14:56:49) [GET]
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;36;1mMusician Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 37ms (View: 16, DB: 15) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 16:15:34) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:19:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (241.7ms)
+Completed in 256ms (View: 241, DB: 8) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:19:43) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"2222222222x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.8ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:44:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (69.3ms)
+Rendered rescues/_request_and_response (16.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:21:56) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"2222222222x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMusician Update (1.0ms)[0m   [0mUPDATE `musicians` SET `phone_cell` = NULL, `updated_at` = '2010-07-29 20:21:56' WHERE `id` = 2[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 77ms (DB: 61) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 16:21:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 123ms (View: 13, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:22:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.5ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.4ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (44.0ms)
+Completed in 81ms (View: 57, DB: 16) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:22:05) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222222x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMusician Update (0.9ms)[0m   [0mUPDATE `musicians` SET `phone_work` = '222222222x542', `updated_at` = '2010-07-29 20:22:05' WHERE `id` = 2[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 59ms (DB: 44) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 16:22:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.5ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 26ms (View: 13, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:28:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (435.9ms)
+Completed in 459ms (View: 434, DB: 17) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:28:23) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222222x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 28ms (DB: 13) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 16:28:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.9ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.1ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 26ms (View: 12, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:28:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (48.6ms)
+Completed in 63ms (View: 48, DB: 8) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:28:58) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mMusician Update (0.3ms)[0m   [0;1mUPDATE `musicians` SET `phone_work` = '222222223x542', `updated_at` = '2010-07-29 20:28:58' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 29ms (DB: 14) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 16:28:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.0ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 26ms (View: 12, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:29:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.7ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (47.5ms)
+Completed in 72ms (View: 46, DB: 18) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:29:33) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.1ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/musician.rb:78:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:29:53) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/musician.rb:78:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:30:37) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:77:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (157.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:31:49) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+
+SyntaxError (/usr/local/src/buck/app/models/musician.rb:81: void value expression
+/usr/local/src/buck/app/models/musician.rb:82: void value expression
+/usr/local/src/buck/app/models/musician.rb:83: syntax error, unexpected $end, expecting kEND):
+  app/controllers/musicians_controller.rb:60:in `update'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:32:26) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.7ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:77:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (132.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:35:03) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"E0zyr1u6UNA3lmaEVHPKn3r4YovzaXwwKMq3tJg6Q0U=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"322222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+XX::
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:78:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-07-29 16:38:53) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 249ms (View: 247, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 16:38:55) [GET]
+  [4;36;1mMusician Load (39.1ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 100ms (View: 47, DB: 45) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:38:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.1ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (59.6ms)
+Completed in 171ms (View: 145, DB: 19) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:38:58) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+XX::322222223x542
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/musician.rb:30:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (56.9ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:39:20) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.1ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+XX::322222223x542
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/musician.rb:30:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (135.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:40:06) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+XX::
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:79:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 16:40:19) [GET]
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 37ms (View: 15, DB: 15) | 200 OK [http://localhost/musicians/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 16:40:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.3ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (44.3ms)
+Completed in 70ms (View: 43, DB: 19) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:40:25) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.7ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+XX::
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:79:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:40:53) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.5ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+XX::232x232
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+TypeError (can't convert false into String):
+  app/models/musician.rb:30:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 16:41:10) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"222222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.3ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+XX::232x232
+::false::
+  [4;36;1mMusician Update (0.3ms)[0m   [0;1mUPDATE `musicians` SET `phone_cell` = '', `updated_at` = '2010-07-29 20:41:10' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 30ms (DB: 14) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 16:41:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 67ms (View: 43, DB: 16) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (14.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:02:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (139.8ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (107.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (15.5ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (264.8ms)
+Completed in 527ms (View: 249, DB: 281) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:02:19) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"2222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (33.0ms)[0m   [0mBEGIN[0m
+XX::232x232
+::false::
+  [4;36;1mMusician Update (239.4ms)[0m   [0;1mUPDATE `musicians` SET `phone_work` = '2222223x542', `updated_at` = '2010-07-29 21:02:19' WHERE `id` = 2[0m
+  [4;35;1mSQL (102.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 396ms (DB: 378) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:02:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.8ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.1ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 30ms (View: 14, DB: 7) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:03:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.4ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (47.6ms)
+Completed in 72ms (View: 46, DB: 17) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:03:25) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.8ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+YYY::
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:79:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (64.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:03:59) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (1.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+YYY::2332x232
+::false::
+  [4;35;1mMusician Update (0.3ms)[0m   [0mUPDATE `musicians` SET `phone_work` = '22222223x542', `updated_at` = '2010-07-29 21:03:59' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 26ms (DB: 7) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:04:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.2ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (1.2ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 45ms (View: 15, DB: 18) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:04:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (30.8ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (128.3ms)
+Completed in 183ms (View: 126, DB: 49) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:04:23) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"dfd", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (28.5ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+YYY::dfd
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `strip' for nil:NilClass):
+  app/models/musician.rb:79:in `split_ext'
+  app/models/musician.rb:29:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (56.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:04:31) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"23332x232", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.6ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+YYY::23332x232
+::false::
+  [4;36;1mMusician Update (0.5ms)[0m   [0;1mUPDATE `musicians` SET `phone_cell` = '23332x232', `updated_at` = '2010-07-29 21:04:31' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 34ms (DB: 16) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:04:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.0ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 29ms (View: 15, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:04:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (29.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (0.5ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (57.4ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (28.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (35.9ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (169.0ms)
+Completed in 222ms (View: 51, DB: 163) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:04:47) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"23332x2432", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+YYY::23332x2432
+::false::
+  [4;36;1mMusician Update (0.6ms)[0m   [0;1mUPDATE `musicians` SET `phone_cell` = '23332x2432', `updated_at` = '2010-07-29 21:04:47' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 31ms (DB: 14) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:04:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 31ms (View: 15, DB: 5) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:05:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (12.2ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.6ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 36ms (View: 13, DB: 15) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:05:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.6ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (120.6ms)
+Completed in 144ms (View: 119, DB: 18) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:05:35) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"23332x2532", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.0ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+YYY::23332x2532
+::false::
+  [4;35;1mMusician Update (0.3ms)[0m   [0mUPDATE `musicians` SET `phone_cell` = '23332x2532', `updated_at` = '2010-07-29 21:05:35' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 32ms (DB: 15) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:05:35) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 30ms (View: 16, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:06:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (45.5ms)
+Completed in 70ms (View: 45, DB: 16) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:06:31) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"233332x2532", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+["233332", "2532"]
+::["233332", "2532"]::
+  [4;35;1mMusician Update (0.3ms)[0m   [0mUPDATE `musicians` SET `phone_cell` = '233332x2532', `updated_at` = '2010-07-29 21:06:32' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 30ms (DB: 14) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:06:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (1.1ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 28ms (View: 13, DB: 8) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:06:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.9ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (48.3ms)
+Completed in 72ms (View: 45, DB: 19) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:06:57) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"233332x25322", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+::["233332", "25322"]::
+  [4;35;1mMusician Update (0.3ms)[0m   [0mUPDATE `musicians` SET `phone_cell` = '233332x25322', `updated_at` = '2010-07-29 21:06:57' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 30ms (DB: 14) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:06:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (2.0ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 30ms (View: 13, DB: 8) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (16.9ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'hendrix') LIMIT 1[0m
+  [4;35;1mMusician Load (0.7ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'plummer') LIMIT 1[0m
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'hendrix') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:09:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (48.2ms)
+Completed in 72ms (View: 47, DB: 17) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:09:42) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"22222223x542", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"233332x225322", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMusician Update (0.3ms)[0m   [0mUPDATE `musicians` SET `phone_cell_ext` = '225322', `phone_cell` = '233332', `updated_at` = '2010-07-29 21:09:42' WHERE `id` = 2[0m
+  [4;36;1mSQL (42.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 75ms (DB: 56) | 302 Found [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:09:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (1.9ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 32ms (View: 14, DB: 8) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMusician Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`lastname` = 'hendrix') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:11:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.1ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mStateProvince Load (0.5ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (47.2ms)
+Completed in 72ms (View: 45, DB: 19) | 200 OK [http://localhost/musicians/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:12:00) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"917-229-0238", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;36;1mMusician Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/models/musician.rb:30:in `phones_strip'
+  app/controllers/musicians_controller.rb:63:in `update'
+  app/controllers/musicians_controller.rb:62:in `update'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:13:11) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"917-229-0238", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMusician Update (0.4ms)[0m   [0;1mUPDATE `musicians` SET `phone_cell` = '', `phone_work` = '9172290238', `updated_at` = '2010-07-29 21:13:11' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 155ms (DB: 4) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:13:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.6ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 59ms (View: 45, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 17:13:26) [GET]
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mStateProvince Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 54ms (View: 17, DB: 9) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-07-29 17:14:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.6ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mStateProvince Load (1.1ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (11.1ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_edit_new (73.0ms)
+Completed in 93ms (View: 62, DB: 19) | 200 OK [http://localhost/musicians/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#update (for 127.0.0.1 at 2010-07-29 17:14:18) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"OX0FrJqidvD3dS+PyKylt9vZoVXYUH7hQyVp5Zeoyp8=", "id"=>"2", "musician"=>{"city"=>"Coon Rapids", "postal_code"=>"55448", "country_id"=>"1", "primary_phone_choice"=>"2", "birthdate(1i)"=>"2010", "phone_home"=>"", "birthdate(2i)"=>"7", "lastname"=>"Hendrix", "firstname"=>"Jim", "phone_work"=>"9172290238 x 238", "birthdate(3i)"=>"29", "stage_lastname"=>"", "mi"=>"", "phone_cell"=>"", "stage_firstname"=>"", "address"=>"11957 Unity St. NW", "state_province_id"=>"23", "email"=>"plummerspace@gmail.com", "suffix"=>""}}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (1.0ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMusician Update (0.3ms)[0m   [0;1mUPDATE `musicians` SET `updated_at` = '2010-07-29 21:14:18', `phone_work_ext` = '238' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/musicians/2
+Completed in 27ms (DB: 5) | 302 Found [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:14:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.6ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 28ms (View: 13, DB: 6) | 200 OK [http://localhost/musicians/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#show (for 127.0.0.1 at 2010-07-29 17:14:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMusician Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (2.3ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering musicians/show
+  [4;36;1mStateProvince Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.8ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+Completed in 33ms (View: 15, DB: 8) | 200 OK [http://localhost/musicians/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-07-29 17:14:27) [GET]
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` ORDER BY created_at DESC LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;36;1mMusician Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.1ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 23) [0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 31ms (View: 16, DB: 7) | 200 OK [http://localhost/musicians]

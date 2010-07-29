@@ -15,6 +15,7 @@
 	    <th>Birthdate</th>
 	 		<th>City</th
 	    <th>Email</th>
+			<th>Phone</th>
 	  </tr>
 
 		<% @musicians.each do |musician| %>
@@ -24,7 +25,7 @@
 		    <td><%=h musician.birthdate %></td>
 				<td><%=h musician.city %>, <%=h musician.state_province.abbreviation %></td>
 		    <td><%= email_shortner(musician.email) %></td>
-		    <td><%= link_to 'Show', musician %></td>
+		 		<td><%= number_to_phone(musician.phone, :area_code => true, :extension => musician.phone_ext) %></td>
 		    <td><%= link_to 'Edit', edit_musician_path(musician) %></td>
 		  </tr>
 		<% end %>
