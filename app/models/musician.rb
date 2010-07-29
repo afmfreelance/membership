@@ -77,6 +77,7 @@ class Musician < ActiveRecord::Base
   
   private
   def strip_and_split_ext(p)
+    #removes all non-standard phone characters, and if there's an extension it puts it into an array so they can be written to two diff. fields
     unless p.blank?
       ph_arr = p.downcase.gsub(/[^0-9x]/, "").split('x') 
       phone = ph_arr[0].strip

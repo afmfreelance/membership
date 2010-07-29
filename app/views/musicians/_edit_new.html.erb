@@ -45,17 +45,17 @@
 		</p>
 		<p class="multifield">
 			<%= f.label :phone_cell,"Cell phone" %><br />
-		  <%= f.text_field :phone_cell, :size => 20 %><br />
+		  <%= f.text_field(:phone_cell, :size => 25, :value => number_to_phone(f.object.phone_cell, :area_code => true, :extension => f.object.phone_cell_ext)) %><br />
 			<%= f.radio_button :primary_phone_choice, 0 %> <small>set as primary</small>
 		</p>
 		<p class="multifield">
 		  <%= f.label :phone_home,"Home phone" %><br />
-		  <%= f.text_field :phone_home, :size => 20 %><br />
+		  <%= f.text_field(:phone_home, :size => 25, :value => number_to_phone(f.object.phone_home, :area_code => true, :extension => f.object.phone_home_ext)) %><br />
 			<%= f.radio_button :primary_phone_choice, 1 %> <small>set as primary</small>
 		</p>
 		<p class="multifield">
 			<%= f.label :phone_work,"Work phone" %><br />
-		  <%= f.text_field :phone_work, :size => 20 %><br />
+		  <%= f.text_field(:phone_work, :size => 25, :value => number_to_phone(f.object.phone_work, :area_code => true, :extension => f.object.phone_work_ext)) %><br />
 			<%= f.radio_button :primary_phone_choice, 2 %> <small>set as primary</small>
 		</p>
 		<p style="padding-top: 1em" class="multibreak">
