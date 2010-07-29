@@ -1,0 +1,35 @@
+<div id="sidebar">
+	<ul>
+		<li><%= link_to 'Add musician', new_musician_path %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1><%= link_to 'AFM Membership Framework', root_path %></h1>
+  </div>
+  <h1>Musicians</h1>
+	<table>
+	  <tr>
+	    <th>Lastname</th>
+			<th>Firstname</th>
+	    <th>Birthdate</th>
+	 		<th>City</th
+	    <th>Email</th>
+	  </tr>
+
+		<% @musicians.each do |musician| %>
+		  <tr>
+				<td><%=h musician.lastname %></td>
+		    <td><%=h musician.firstname %> <%=h musician.mi %></td>
+		    <td><%=h musician.birthdate %></td>
+				<td><%=h musician.city %>, <%=h musician.state_province.abbreviation %></td>
+		    <td><%= email_shortner(musician.email) %></td>
+		    <td><%= link_to 'Show', musician %></td>
+		    <td><%= link_to 'Edit', edit_musician_path(musician) %></td>
+		  </tr>
+		<% end %>
+	</table>
+	<p><%= will_paginate @posts %></p>
+</div>
+
+

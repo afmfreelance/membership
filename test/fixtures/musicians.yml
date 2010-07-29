@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ssn: 1
+  birthdate: 2010-07-28
+  firstname: MyString
+  lastname: MyString
+  mi: MyString
+  email: MyString
+  phone_home: MyString
+  phone_cell: MyString
+  phone_work: MyString
+  address: MyString
+  city: MyString
+  state_province: MyString
+  postal_code: MyString
+  country_code: 1
+
+two:
+  ssn: 1
+  birthdate: 2010-07-28
+  firstname: MyString
+  lastname: MyString
+  mi: MyString
+  email: MyString
+  phone_home: MyString
+  phone_cell: MyString
+  phone_work: MyString
+  address: MyString
+  city: MyString
+  state_province: MyString
+  postal_code: MyString
+  country_code: 1

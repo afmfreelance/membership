@@ -1,0 +1,86 @@
+<% form_for(@musician) do |f| %>
+  <%= f.error_messages %>
+	<fieldset>
+		<legend>Musician's full legal name</legend>
+		
+		<p class="multifield">
+		  <%= f.label :firstname, 'First name' %><br />
+		  <%= f.text_field :firstname, :size => 10 %>
+		</p>
+		<p class="multifield">
+			<%= f.label :mi,'MI' %><br />
+			<%= f.text_field :mi, :size => 1 %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :lastname, 'Last name' %><br />
+		  <%= f.text_field :lastname, :size => 15 %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :suffix, 'Suffix' %><br />
+		  <%= f.text_field :suffix, :size => 4 %>
+		</p>
+	</fieldset>
+	<fieldset>
+		<legend>Stage name <em>(if differs from legal name)</em></legend>
+
+		<p class="multifield">
+		  <%= f.label :stage_firstname, 'First name' %><br />
+		  <%= f.text_field :stage_firstname, :size => 10 %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :stage_lastname, 'Last name' %><br />
+		  <%= f.text_field :stage_lastname, :size => 15 %>
+		</p>
+	</fieldset>
+		
+	<p class="multibreak">
+	  <%= f.label :birthdate, 'Date of Birth' %><br />
+	  <%= f.date_select :birthdate, { :start_year => 1900, :end_year => Time.now.year, :order => [:month, :day, :year] } %>
+	</p>
+	<fieldset>
+		<legend>Contact Info</legend>
+		<p>
+		  <%= f.label :email %><br />
+		  <%= f.text_field :email, :size => 35 %>
+		</p>
+		<p class="multifield">
+			<%= f.label :phone_cell,"Cell phone" %><br />
+		  <%= f.text_field :phone_cell, :size => 20 %><br />
+			<%= f.radio_button :primary_phone_choice, 0 %> <small>set as primary</small>
+		</p>
+		<p class="multifield">
+		  <%= f.label :phone_home,"Home phone" %><br />
+		  <%= f.text_field :phone_home, :size => 20 %><br />
+			<%= f.radio_button :primary_phone_choice, 1 %> <small>set as primary</small>
+		</p>
+		<p class="multifield">
+			<%= f.label :phone_work,"Work phone" %><br />
+		  <%= f.text_field :phone_work, :size => 20 %><br />
+			<%= f.radio_button :primary_phone_choice, 2 %> <small>set as primary</small>
+		</p>
+		<p style="padding-top: 1em" class="multibreak">
+		  <%= f.label :address, 'Street address' %><br />
+		  <%= f.text_field :address, :size => 45 %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :city %><br />
+		  <%= f.text_field :city %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :state_province_id, 'State / Province' %><br />
+		  <%= f.select :state_province_id, StateProvince.all.collect {|s| [ s.name, s.id ] }, :include_blank => true %>
+		</p>
+		<p class="multifield">
+		  <%= f.label :postal_code %><br />
+		  <%= f.text_field :postal_code, :size => 15 %>
+		</p>
+		
+		<p class="multibreak">
+		  <%= f.label :country_id,'Country' %><br />
+		  <%= f.select :country_id, Country.all.collect {|c| [ c.name, c.id ] }, :include_blank => true %>
+		</p>
+  </fieldset>
+  <p>
+    <%= f.submit form_action %>
+  </p>
+<% end %>

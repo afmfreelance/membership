@@ -1,0 +1,80 @@
+<h1>Editing local</h1>
+
+<% form_for(@local) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :chartered %><br />
+    <%= f.date_select :chartered %>
+  </p>
+  <p>
+    <%= f.label :jurisdiction %><br />
+    <%= f.text_area :jurisdiction %>
+  </p>
+  <p>
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state_province %><br />
+    <%= f.text_field :state_province %>
+  </p>
+  <p>
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </p>
+  <p>
+    <%= f.label :country_code %><br />
+    <%= f.text_field :country_code %>
+  </p>
+  <p>
+    <%= f.label :phone_primary %><br />
+    <%= f.text_field :phone_primary %>
+  </p>
+  <p>
+    <%= f.label :phone2 %><br />
+    <%= f.text_field :phone2 %>
+  </p>
+  <p>
+    <%= f.label :phone3 %><br />
+    <%= f.text_field :phone3 %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </p>
+  <p>
+    <%= f.label :city_state_title %><br />
+    <%= f.text_field :city_state_title %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @local %> |
+<%= link_to 'Back', locals_path %>

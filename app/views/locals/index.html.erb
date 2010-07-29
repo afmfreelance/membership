@@ -1,0 +1,38 @@
+<div id="sidebar">
+	<ul>
+		<li><%= link_to 'New Local', new_local_path %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1><%= link_to 'AFM Financial Framework', root_path %></h1>
+  </div>
+	<h1>AFM Locals</h1>
+	<p><%= will_paginate @locals %></p>
+	<table>
+	  <tr>
+			<th>&nbsp;</th>
+			<th>City</th>
+	    <th>Name</th>
+	    <th>Email</th>
+	    <th>Website</th>
+	    <th>Phone (primary)</th>  
+	  </tr>
+
+	<% @locals.each do |local| %>
+	  <tr>
+			<td><%=h local.number %></td>
+	    <td><%=h local.city_state_title %></td>
+			<td><%=h local.name %></td>
+	    <td><%= email_shortner(local.email) %></td>
+	    <td><%=h local.website %></td>
+	    <td><%=h local.phone_primary %></td>
+	    
+	    <td><%= link_to 'Show', local %></td>
+	    <td><%= link_to 'Edit', edit_local_path(local) %></td>
+	  </tr>
+	<% end %>
+	</table>
+	<p><%= will_paginate @locals %></p>
+</div>
+
