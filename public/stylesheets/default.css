@@ -171,9 +171,11 @@ a:hover {
   margin-bottom: 5px;
 }
 /*matt*/
-table th { text-align: left; padding-left: 5px; padding-right: 5px;}
-table td { padding: 5px;}
+table.listing th { text-align: left; padding-left: 5px; padding-right: 5px; vertical-align: bottom; }
+table.listing  td { padding: 5px; vertical-align: top; }
 .multifield { float: left; padding-right: 10px; }
 .multibreak { clear: left; }
 
 fieldset { border: 1px solid #aaa; margin-bottom: 2em; }
+#breadcrumbs { font-size: 12px;}
+table.listing { }

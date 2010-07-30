@@ -1,12 +1,13 @@
 <div id="sidebar">
 	<ul>
-		<li><%= link_to 'Back', musicians_path %></li>
+		<li></li>
 	</ul>
 </div>
 <div id="content">
   <div id="header">
-    <h1><%= link_to 'AFM Membership Framework', root_path %></h1>
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Musicians', musicians_path %> &rarr; Add</p>
   </div>
-	<h1>Add musician</h1>
+	<h2>Add musician</h2>
 	<%= render :partial => 'edit_new', :locals => {:form_action => 'Add user'} %>
 </div>

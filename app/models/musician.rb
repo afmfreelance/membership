@@ -1,18 +1,33 @@
 class Musician < ActiveRecord::Base
   belongs_to :country
   belongs_to :state_province
+  has_many :locals, :through => :memberships
+  has_many :instruments, :through => :musician_instruments
+  has_many :musician_instruments
+  has_many :memberships
+  accepts_nested_attributes_for :musician_instruments, :reject_if => lambda { |a| a[:instrument_id].blank? }, :allow_destroy => true
   
   before_validation :phones_strip, :names_format
-  cattr_reader :per_page
-  @@per_page = 20
-  
+ 
   validates_presence_of :firstname, :lastname, :birthdate, :email, :address, :city, :state_province_id, :postal_code, :country_id, :primary_phone_choice
   validate :at_least_one_phone_entered, :primary_phone_exists
+  
+  cattr_reader :per_page
+  @@per_page = 20
+   
+  def full_name
+    unless stage_firstname.blank? && stage_lastname.blank?
+      [stage_firstname, stage_lastname].join(' ')
+    else
+      [firstname, lastname].join(' ')
+    end
+  end
   
   def phone #auto-display primary phone number as virtual field
     phones = [self.phone_cell,self.phone_home,self.phone_work]   
     phones[self.primary_phone_choice.to_i] if self.primary_phone_choice
   end
+ 
   def phone_ext #same as phone
     exts = [self.phone_cell_ext,self.phone_home_ext,self.phone_work_ext]   
     exts[self.primary_phone_choice.to_i] if self.primary_phone_choice
@@ -21,7 +36,9 @@ class Musician < ActiveRecord::Base
   def names_format
     self.firstname = firstname.titleize
     self.lastname = lastname.titleize
+    self.mi = mi.upcase
     self.city = city.titleize
+    self.address = address.titleize
   end
   
   def phones_strip

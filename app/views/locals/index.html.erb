@@ -5,11 +5,12 @@
 </div>
 <div id="content">
   <div id="header">
-    <h1><%= link_to 'AFM Financial Framework', root_path %></h1>
+    <h1>AFM Membership Framework></h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; Locals</p>
   </div>
-	<h1>AFM Locals</h1>
+	<h2>AFM Locals</h2>
 	<p><%= will_paginate @locals %></p>
-	<table>
+	<table class="listing">
 	  <tr>
 			<th>&nbsp;</th>
 			<th>City</th>

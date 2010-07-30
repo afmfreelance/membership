@@ -1,5 +1,17 @@
-<h1>Editing musician</h1>
-<%= render :partial => 'edit_new', :locals => { :form_action => 'Save' } %>
+<div id="sidebar">
+	<h2>Maintenance</h2>
+	<ul>
+		<!--><li><%= link_to 'View', @musician %></li>-->
+		<li><%= link_to 'Delete musician', @musician, :confirm => 'Are you sure?', :method => :delete %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework></h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Musicians', musicians_path %> &rarr; Edit</p>
+  </div>
+	<h2><%= @musician.full_name %></h2>
+	<%= render :partial => 'edit_new', :locals => { :form_action => 'Save' } %>
+</div>
 
-<%= link_to 'Show', @musician %> |
-<%= link_to 'Back', musicians_path %>
+

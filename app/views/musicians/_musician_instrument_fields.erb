@@ -1,0 +1,6 @@
+<li class="fields">
+	<%#= f.text_field :instrument_id %>
+	<%= f.collection_select :instrument_id, Instrument.all, :id, :name, :include_blank => true %>
+	<%#= f.select :id, Instrument.all.collect {|i| [ i.name, i.id ] }, :include_blank => true %>
+	<%= button_to_remove_fields f %>
+</li>

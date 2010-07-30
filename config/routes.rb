@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :instruments
+
+  map.resources :categories
+
+  map.resources :statuses
+
   map.resources :state_provinces
 
   map.resources :locals

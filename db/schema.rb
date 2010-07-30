@@ -9,13 +9,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100729185207) do
+ActiveRecord::Schema.define(:version => 20100729224614) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "countries", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "abbreviation"
+  end
+
+  create_table "instruments", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "locals", :force => true do |t|
@@ -39,6 +51,24 @@ ActiveRecord::Schema.define(:version => 20100729185207) do
     t.string   "email2"
     t.string   "email3"
     t.integer  "sort_num"
+  end
+
+  create_table "memberships", :force => true do |t|
+    t.integer  "musician_id"
+    t.integer  "local_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.date     "start"
+    t.date     "end"
+    t.integer  "status_id"
+    t.integer  "type_id"
+  end
+
+  create_table "musician_instruments", :force => true do |t|
+    t.integer  "instrument_id"
+    t.integer  "musician_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "musicians", :force => true do |t|
@@ -65,12 +95,19 @@ ActiveRecord::Schema.define(:version => 20100729185207) do
     t.string   "phone_cell_ext"
     t.string   "phone_home_ext"
     t.string   "phone_work_ext"
+    t.string   "county"
   end
 
   create_table "state_provinces", :force => true do |t|
     t.string   "name"
     t.string   "abbreviation"
     t.integer  "country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "statuses", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
