@@ -5,9 +5,12 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>AFM Membership Framework :: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'default' %>
-	<%= javascript_include_tag 'jquery','application' %>
-	<%#= javascript_include_tag 'jquery-ui' %>
+	<%= javascript_include_tag 'jquery' %>
+	
+	<%= yield(:head) %>
+	<%= javascript_include_tag 'application' %>
 	<%#= javascript_include_tag 'jrails' %>
+	
 </head>
 <body>
 	<div id="page">

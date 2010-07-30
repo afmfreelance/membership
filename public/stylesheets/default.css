@@ -179,3 +179,4 @@ table.listing  td { padding: 5px; vertical-align: top; }
 fieldset { border: 1px solid #aaa; margin-bottom: 2em; }
 #breadcrumbs { font-size: 12px;}
 table.listing { }
+#instrument_list li { cursor: crosshair; }

@@ -7,7 +7,7 @@ $(document).ready(function(){
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 });
-
+//so far used in jquery ui: sortable
 //functions
 function remove_fields(link) {
   $(link).prev("input[type=hidden]").val("1");

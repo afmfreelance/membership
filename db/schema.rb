@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
     t.integer  "musician_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "order"
+    t.integer  "sort"
   end
 
   create_table "musicians", :force => true do |t|
