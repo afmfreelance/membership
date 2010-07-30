@@ -2,13 +2,14 @@ class Musician < ActiveRecord::Base
   belongs_to :country
   belongs_to :state_province
   has_many :locals, :through => :memberships
-  has_many :instruments, :through => :musician_instruments
+  has_many :instruments, :through => :musician_instruments, :uniq => true
   has_many :musician_instruments
   has_many :memberships
   accepts_nested_attributes_for :musician_instruments, :reject_if => lambda { |a| a[:instrument_id].blank? }, :allow_destroy => true
   
   before_validation :phones_strip, :names_format
- 
+  after_save :remove_dups
+  
   validates_presence_of :firstname, :lastname, :birthdate, :email, :address, :city, :state_province_id, :postal_code, :country_id, :primary_phone_choice
   validate :at_least_one_phone_entered, :primary_phone_exists
   
@@ -33,6 +34,28 @@ class Musician < ActiveRecord::Base
     exts[self.primary_phone_choice.to_i] if self.primary_phone_choice
   end
 
+  #functions to do stuff
+  def remove_dups
+    instruments_used = {}
+    
+    self.musician_instruments.each do |mi|
+      self.musician_instruments.find(mi).destroy if instruments_used[mi.instrument_id]
+      instruments_used[mi.instrument_id] = true
+    end
+    
+  end
+  def temp
+    hashes = self.musician_instruments.inject({}) do |hash, record|
+      key = attrs.map {|a| record.send(a).to_s }.join
+      if key.blank? || record.marked_for_destruction?
+        key = record.object_id
+      end
+      hash[key] = record unless hash[key]
+      #logger.debug "*" + hash.inspect + " * " + record.inspect
+      hash
+    end
+    logger.debug "*" + hashes.inspect
+  end
   def names_format
     self.firstname = firstname.titleize
     self.lastname = lastname.titleize
