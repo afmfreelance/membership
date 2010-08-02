@@ -179,4 +179,8 @@ table.listing  td { padding: 5px; vertical-align: top; }
 fieldset { border: 1px solid #aaa; margin-bottom: 2em; }
 #breadcrumbs { font-size: 12px;}
 table.listing { }
-#instrument_list li { cursor: crosshair; }
+ol#instrument_list  { }
+ol#instrument_list li { cursor: move; }
+#local_list { float: left; }
+ul.fields_list { list-style: none; margin-left: 0; padding-left: 0; }
+ul.fields_list li { margin-bottom: .5em; margin-left: 1em; padding-left: 0; }

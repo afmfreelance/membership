@@ -25,7 +25,9 @@ class MusiciansController < ApplicationController
   # GET /musicians/new.xml
   def new
     @musician = Musician.new(:primary_phone_choice => 0)
-    3.times { @musician.musician_instruments.build }  
+    3.times { @musician.musician_instruments.build }
+    @musician.memberships.build
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @musician }

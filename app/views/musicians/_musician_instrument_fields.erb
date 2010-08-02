@@ -1,5 +1,4 @@
 <li class="fields">
-	<%#= f.object.instrument_id %>
 	<%= f.collection_select :instrument_id, Instrument.all, :id, :name, :include_blank => true %>
 	<%= f.hidden_field :sort, :class => 'sort' %>
 	<%= button_to_remove_fields f %>

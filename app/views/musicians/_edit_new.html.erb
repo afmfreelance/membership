@@ -4,18 +4,11 @@
 		$(document).ready(function(){
 			$('#instrument_list').sortable({
 	      axis: 'y', 
-	      //dropOnEmpty:false, 
-	      //handle: '.handle', 
-	      //cursor: 'crosshair',
-	      //items: 'li',
 	      opacity: 0.4,
 	      scroll: true,
 				update: function(){
-	        //alert('test');
-					//alert( $('#instrument_list').children('li').size() );
 					x = 0;
 					$('#instrument_list').children('li').each(function(index) {
-						//alert(index + ': ' + $(this).text() );
 						$(this).children('input[type=hidden].sort').val(x)
 						x++;
 					});
@@ -117,6 +110,18 @@
 		</ol>
 		<%= link_to_add_fields('Add instrument', f, :musician_instruments) %>
 	</fieldset>
+	
+	<fieldset>
+		<legend>Membership</legend>
+		
+		<ul id="local_list" class="fields_list">
+			<% f.fields_for :memberships do |builder| %>
+				<%= render 'membership_fields', :f => builder %>
+			<% end %>
+		</ul>
+		<p style="clear: left"><%= link_to_add_fields('Add membership', f, :memberships, 'local_fields') %></p>
+	</fieldset>
+	
   <p>
     <%= f.submit form_action %>
   </p>

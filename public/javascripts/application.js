@@ -11,14 +11,18 @@ jQuery.ajaxSetup({
 //functions
 function remove_fields(link) {
   $(link).prev("input[type=hidden]").val("1");
-	$(link).parent().hide();
+	$(link).closest(".fields").hide();
 	return false;
   
 }
 function add_fields(link, association, content) {
   var new_id = new Date().getTime();
   var regexp = new RegExp("new_" + association, "g")
-  $(link).prev(".fields_list").append(content.replace(regexp, new_id));
+  //$(link).prev(".fields_list").append(content.replace(regexp, new_id));
+  $(link).closest("fieldset").children(".fields_list").append(content.replace(regexp, new_id));
+	
+	//$("#local_list").append(content.replace(regexp, new_id));
+	return false;
 }
 
 

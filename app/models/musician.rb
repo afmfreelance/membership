@@ -6,6 +6,7 @@ class Musician < ActiveRecord::Base
   has_many :musician_instruments
   has_many :memberships
   accepts_nested_attributes_for :musician_instruments, :reject_if => lambda { |a| a[:instrument_id].blank? }, :allow_destroy => true
+  accepts_nested_attributes_for :memberships, :reject_if => lambda { |a| a[:local_id].blank? }, :allow_destroy => true
   
   before_validation :phones_strip, :names_format
   after_save :remove_dups

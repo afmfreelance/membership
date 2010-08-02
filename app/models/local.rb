@@ -6,6 +6,10 @@ class Local < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 20
   
+  def short_name
+    self.number 
+  end
+  
   def sort_num
     self.number.split('-')[0]
   end
