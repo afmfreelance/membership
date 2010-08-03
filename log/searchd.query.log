@@ -55,3 +55,6 @@
 [Tue Aug  3 18:59:31.116 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
 [Tue Aug  3 18:59:33.714 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] fiddle
 [Tue Aug  3 18:59:39.434 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] matthew fiddle
+[Tue Aug  3 19:01:05.698 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] 70
+[Tue Aug  3 19:01:17.946 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Tue Aug  3 19:01:47.317 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
