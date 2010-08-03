@@ -27609,3 +27609,127 @@ Migrating to AddInstrumentParent (20100803204343)
   [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `titles`[0m
   [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `titles`[0m
   [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `titles`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-03 18:58:22) [GET]
+  Parameters: {"search"=>"plummer ny", "commit"=>"Search"}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'plummer ny'[0m
+  [4;32;1mSphinx (0.003337s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 213ms (View: 17, DB: 7) | 200 OK [http://localhost/musicians?search=plummer+ny&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mLocal Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mInstrument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `instruments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT @@global.sql_mode, @@session.sql_mode;[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-08-03 18:59:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMusician Columns (12.5ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (1.0ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mTitle Load (0.3ms)[0m   [0;1mSELECT * FROM `titles` [0m
+  [4;35;1mTitle Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `titles`[0m
+Rendered musicians/_general (18.3ms)
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_contact (16.3ms)
+  [4;36;1mMusicianInstrument Load (0.4ms)[0m   [0;1mSELECT * FROM `musician_instruments` WHERE (`musician_instruments`.musician_id = 1) ORDER BY sort ASC[0m
+  [4;35;1mMusicianInstrument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `musician_instruments`[0m
+  [4;36;1mInstrument Load (0.9ms)[0m   [0;1mSELECT * FROM `instruments` ORDER BY name ASC[0m
+  [4;35;1mInstrument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `instruments`[0m
+Rendered musicians/_musician_instrument_fields (11.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.5ms)
+Rendered musicians/_music (129.3ms)
+  [4;36;1mLocal Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) [0m
+  [4;36;1mLocal Load (1.7ms)[0m   [0;1mSELECT `locals`.* FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) ORDER BY sort_num ASC[0m
+  [4;35;1mMembership Load (0.3ms)[0m   [0mSELECT * FROM `memberships` WHERE (`memberships`.musician_id = 1) [0m
+  [4;36;1mMembership Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mLocal Load (37.6ms)[0m   [0mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+  [4;35;1mCategory Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered musicians/_membership_fields (62.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered musicians/_membership_fields (18.0ms)
+Rendered musicians/_membership (177.8ms)
+Rendered musicians/_edit_new (345.4ms)
+Completed in 422ms (View: 298, DB: 72) | 200 OK [http://localhost/musicians/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-03 18:59:27) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-03 18:59:30) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.004658s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 207ms (View: 19, DB: 16) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-03 18:59:33) [GET]
+  Parameters: {"search"=>"fiddle", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (5.4ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'fiddle'[0m
+  [4;32;1mSphinx (0.003448s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.9ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 81ms (View: 17, DB: 9) | 200 OK [http://localhost/musicians?search=fiddle&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-03 18:59:39) [GET]
+  Parameters: {"search"=>"matthew fiddle", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'matthew fiddle'[0m
+  [4;32;1mSphinx (0.003624s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.9ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 81ms (View: 17, DB: 9) | 200 OK [http://localhost/musicians?search=matthew+fiddle&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mLocal Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mInstrument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `instruments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT @@global.sql_mode, @@session.sql_mode;[0m

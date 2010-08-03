@@ -20,12 +20,14 @@ class Musician < ActiveRecord::Base
    
   define_index do
    indexes [firstname, lastname], :as => :name
+   indexes [stage_firstname, stage_lastname], :as => :stage_name
    indexes mi, city, ssn, email
    indexes [state_province.name, state_province.abbreviation], :as => :state_province
    indexes [country.name, country.abbreviation], :as => :country
    #indexes [, state_provinces.abbreviation], :as => :state_provinces
    #indexes  :as => :state_province_abbreviation
    indexes locals.number, :as => :local_number
+   indexes instruments.name, :as => :instruments
   end
    
   def full_name

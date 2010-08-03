@@ -34,3 +34,11 @@
 [Tue Aug  3 18:54:54.882 2010] [ 4668] shutdown complete
 [Tue Aug  3 18:54:55.884 2010] [ 4678] creating server socket on 127.0.0.1:9312
 [Tue Aug  3 18:54:55.884 2010] [ 4678] accepting connections
+[Tue Aug  3 18:59:10.443 2010] [ 4678] caught SIGTERM, shutting down
+[Tue Aug  3 18:59:10.445 2010] [ 4678] shutdown complete
+[Tue Aug  3 18:59:10.700 2010] [ 4708] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:59:10.700 2010] [ 4708] accepting connections
+[Tue Aug  3 19:00:21.434 2010] [ 4708] caught SIGTERM, shutting down
+[Tue Aug  3 19:00:21.435 2010] [ 4708] shutdown complete
+[Tue Aug  3 19:00:21.607 2010] [ 4719] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 19:00:21.607 2010] [ 4719] accepting connections
