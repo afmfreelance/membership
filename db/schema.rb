@@ -9,12 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100730155812) do
+ActiveRecord::Schema.define(:version => 20100803204343) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort"
   end
 
   create_table "countries", :force => true do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "permalink"
   end
 
   create_table "locals", :force => true do |t|
@@ -51,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
     t.string   "email2"
     t.string   "email3"
     t.integer  "sort_num"
+    t.integer  "lif"
   end
 
   create_table "memberships", :force => true do |t|
@@ -61,7 +64,7 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
     t.date     "start"
     t.date     "end"
     t.integer  "status_id"
-    t.integer  "type_id"
+    t.integer  "category_id"
   end
 
   create_table "musician_instruments", :force => true do |t|
@@ -97,6 +100,14 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
     t.string   "phone_home_ext"
     t.string   "phone_work_ext"
     t.string   "county"
+    t.integer  "title_id"
+    t.string   "mothers_maiden_name"
+    t.string   "url"
+    t.integer  "email_confidential",   :default => 0
+    t.integer  "phone_confidential",   :default => 0
+    t.integer  "address_confidential", :default => 0
+    t.text     "notes"
+    t.integer  "im_online",            :default => 0
   end
 
   create_table "state_provinces", :force => true do |t|
@@ -108,6 +119,13 @@ ActiveRecord::Schema.define(:version => 20100730155812) do
   end
 
   create_table "statuses", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sort"
+  end
+
+  create_table "titles", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

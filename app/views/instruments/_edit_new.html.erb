@@ -1,0 +1,11 @@
+<% form_for(@instrument) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit form_action %>
+  </p>
+<% end %>

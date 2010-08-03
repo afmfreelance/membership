@@ -1,0 +1,40 @@
+<fieldset>
+<legend>Musician's full legal name</legend>
+<p class="multifield">
+	<%= f.label :title %><br />
+	<%= f.select :title_id, Title.all.collect {|t| [ t.name, t.id ] }, :include_blank => true %>
+	</p>
+	<p class="multifield">
+	  <%= f.label :firstname, 'First name' %><br />
+	  <%= f.text_field :firstname, :size => 10 %>
+	</p>
+	<p class="multifield">
+		<%= f.label :mi,'MI' %><br />
+		<%= f.text_field :mi, :size => 1 %>
+	</p>
+	<p class="multifield">
+	  <%= f.label :lastname, 'Last name' %><br />
+	  <%= f.text_field :lastname, :size => 15 %>
+	</p>
+	<p class="multifield">
+	  <%= f.label :suffix, 'Suffix' %><br />
+	  <%= f.text_field :suffix, :size => 4 %>
+	</p>
+</fieldset>
+<fieldset>
+	<legend>Stage name <em>(if differs from legal name)</em></legend>
+
+	<p class="multifield">
+	  <%= f.label :stage_firstname, 'First name' %><br />
+	  <%= f.text_field :stage_firstname, :size => 10 %>
+	</p>
+	<p class="multifield">
+	  <%= f.label :stage_lastname, 'Last name' %><br />
+	  <%= f.text_field :stage_lastname, :size => 15 %>
+	</p>
+</fieldset>
+
+<p class="multibreak">
+  <%= f.label :birthdate, 'Date of Birth' %><br />
+  <%= f.date_select :birthdate, { :start_year => 1900, :end_year => Time.now.year, :order => [:month, :day, :year] } %>
+</p>

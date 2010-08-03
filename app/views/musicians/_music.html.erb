@@ -1,0 +1,10 @@
+<fieldset>
+	<legend>Instruments</legend>
+	<small>Drag the number to re-order</small>
+	<ol id="instrument_list" class="fields_list">
+		<% f.fields_for :musician_instruments do |builder| %>
+			<%= render 'musician_instrument_fields', :f => builder %>
+		<% end %>
+	</ol>
+	<%= link_to_add_fields('Add instrument', f, :musician_instruments) %>
+</fieldset>

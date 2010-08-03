@@ -1,0 +1,26 @@
+<% if @musician.locals.size > 0 %>
+	<h3>Existing memberships</h3>
+	<ul>
+		<% @musician.locals.each do |local| %>
+			<%= local.name %>
+		<% end %>
+	</ul>
+<% end %>
+<% if @musician.locals.size > 0 %>
+	<h3>Previous memberships</h3>
+	<ul>
+		<% @musician.locals.each do |local| %>
+			<%= local.name %>
+		<% end %>
+	</ul>
+<% end %>
+<fieldset>
+	<legend>Locals</legend>
+
+	<ul id="local_list" class="fields_list">
+		<% f.fields_for :memberships do |builder| %>
+			<%= render 'membership_fields', :f => builder %>
+		<% end %>
+	</ul>
+	<p style="clear: left"><%= link_to_add_fields('Add membership', f, :memberships, 'local_fields') %></p>
+</fieldset>

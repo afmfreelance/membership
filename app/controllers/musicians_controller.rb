@@ -2,7 +2,7 @@ class MusiciansController < ApplicationController
   # GET /musicians
   # GET /musicians.xml
   def index
-    @musicians = Musician.paginate :page => params[:page], :order => 'created_at DESC'
+    @musicians = Musician.search params[:search] #paginate :page => params[:page], :order => 'created_at DESC'
     
     respond_to do |format|
       format.html # index.html.erb
@@ -64,7 +64,7 @@ class MusiciansController < ApplicationController
     respond_to do |format|
       if @musician.update_attributes(params[:musician])
         flash[:notice] = 'Musician was successfully updated.'
-        format.html { redirect_to(@musician) }
+        format.html { redirect_to(edit_musician_path(@musician)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

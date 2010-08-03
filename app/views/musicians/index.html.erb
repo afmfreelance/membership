@@ -10,6 +10,10 @@
 		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; Musicians</p>
   </div>
   <h1>Musicians</h1>
+	<p style="color: green"><%= flash[:notice] %></p>
+	<% form_tag musicians_path, :method => :get do -%>
+		<p><%= text_field_tag 'search', params[:search], :size => 40 %> <%= submit_tag 'Search' %></p>
+	<% end %>
 	<table class="listing">
 	  <tr>
 	    <th>Lastname</th>

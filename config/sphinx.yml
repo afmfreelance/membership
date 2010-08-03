@@ -1,0 +1,5 @@
+development:
+  config_file: "/Users/plummerm/ruby/buck/config/development.sphinx.conf"
+  searchd_log_file: "/Users/plummerm/ruby/buck/log/searchd.log"
+  query_log_file: "/Users/plummerm/ruby/buck/log/searchd.query.log"
+  pid_file: "/Users/plummerm/ruby/buck/log/searchd.development.pid"

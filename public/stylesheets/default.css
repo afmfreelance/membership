@@ -141,7 +141,7 @@ a:hover {
 }
 
 
-#search {
+/*#search {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -152,7 +152,7 @@ a:hover {
   margin: 2px;
 }
 #search-text {width: 170px}
-
+*/
 
 #sidebar ul {
   margin-left: 0;
@@ -180,7 +180,7 @@ fieldset { border: 1px solid #aaa; margin-bottom: 2em; }
 #breadcrumbs { font-size: 12px;}
 table.listing { }
 ol#instrument_list  { }
-ol#instrument_list li { cursor: move; }
+ol#instrument_list li { cursor: move; margin-bottom: 1em; }
 #local_list { float: left; }
 ul.fields_list { list-style: none; margin-left: 0; padding-left: 0; }
 ul.fields_list li { margin-bottom: .5em; margin-left: 1em; padding-left: 0; }

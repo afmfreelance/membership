@@ -7,5 +7,9 @@
 	  <%= f.label :start, 'Admit date' %><br />
 	  <%= f.date_select :start, { :start_year => 1900, :end_year => Time.now.year, :order => [:month, :day, :year] } %>
 	</p>
+	<p class="multifield">
+	  <%= f.label :category, 'Category' %><br />
+	  <%= f.collection_select :category_id, Category.all, :id, :name %>
+	</p>
 	<p class="multifield"><%= button_to_remove_fields f %></p>
 </li>

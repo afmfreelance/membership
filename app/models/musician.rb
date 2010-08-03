@@ -1,9 +1,10 @@
 class Musician < ActiveRecord::Base
   belongs_to :country
   belongs_to :state_province
+  belongs_to :title
   has_many :locals, :through => :memberships
   has_many :instruments, :through => :musician_instruments, :uniq => true
-  has_many :musician_instruments
+  has_many :musician_instruments, :dependent => :destroy
   has_many :memberships
   accepts_nested_attributes_for :musician_instruments, :reject_if => lambda { |a| a[:instrument_id].blank? }, :allow_destroy => true
   accepts_nested_attributes_for :memberships, :reject_if => lambda { |a| a[:local_id].blank? }, :allow_destroy => true
@@ -16,6 +17,16 @@ class Musician < ActiveRecord::Base
   
   cattr_reader :per_page
   @@per_page = 20
+   
+  define_index do
+   indexes [firstname, lastname], :as => :name
+   indexes mi, city, ssn, email
+   indexes [state_province.name, state_province.abbreviation], :as => :state_province
+   indexes [country.name, country.abbreviation], :as => :country
+   #indexes [, state_provinces.abbreviation], :as => :state_provinces
+   #indexes  :as => :state_province_abbreviation
+   indexes locals.number, :as => :local_number
+  end
    
   def full_name
     unless stage_firstname.blank? && stage_lastname.blank?
@@ -34,7 +45,15 @@ class Musician < ActiveRecord::Base
     exts = [self.phone_cell_ext,self.phone_home_ext,self.phone_work_ext]   
     exts[self.primary_phone_choice.to_i] if self.primary_phone_choice
   end
-
+  
+  def url=(value)
+    unless value =~ /https?:\/\/.*/ || value.blank?
+      write_attribute :url, "http://" + value.to_s
+    else
+      write_attribute :url, value
+    end
+  end
+  
   #functions to do stuff
   def remove_dups
     instruments_used = {}

@@ -1,16 +1,14 @@
-<h1>Editing instrument</h1>
-
-<% form_for(@instrument) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @instrument %> |
-<%= link_to 'Back', instruments_path %>
+<div id="sidebar">
+	<h2>Maintenance</h2>
+	<ul>
+		<li><%= link_to 'Delete instrument', @instrument, :confirm => 'Are you sure?', :method => :delete %></li>
+	</ul>	
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Instruments', instruments_path %> &rarr; Edit</p>
+  </div>
+  <h2><%= @instrument.name %></h2>
+	<%= render 'edit_new', :form_action => 'Save' %>
+</div>

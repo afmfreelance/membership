@@ -1,0 +1,36 @@
+[Tue Aug  3 18:20:28.021 2010] [ 4525] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:20:28.021 2010] [ 4525] accepting connections
+[Tue Aug  3 18:36:59.262 2010] [ 4525] rotating indices (seamless=1)
+[Tue Aug  3 18:36:59.314 2010] [ 4525] WARNING: rotating index 'musician_core': cur to old rename failed: rename /usr/local/src/buck/db/sphinx/development/musician_core.spl to /usr/local/src/buck/db/sphinx/development/musician_core.old.spl failed: No such file or directory
+[Tue Aug  3 18:36:59.315 2010] [ 4525] rotating finished
+[Tue Aug  3 18:37:47.468 2010] [ 4525] rotating indices (seamless=1)
+[Tue Aug  3 18:37:47.474 2010] [ 4525] WARNING: rotating index 'musician_core': cur to old rename failed: rename /usr/local/src/buck/db/sphinx/development/musician_core.spl to /usr/local/src/buck/db/sphinx/development/musician_core.old.spl failed: No such file or directory
+[Tue Aug  3 18:37:47.474 2010] [ 4525] rotating finished
+[Tue Aug  3 18:43:37.433 2010] [ 4525] caught SIGTERM, shutting down
+[Tue Aug  3 18:43:37.433 2010] [ 4525] shutdown complete
+[Tue Aug  3 18:43:37.771 2010] [ 4609] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:43:37.771 2010] [ 4609] accepting connections
+[Tue Aug  3 18:44:49.248 2010] [ 4609] caught SIGTERM, shutting down
+[Tue Aug  3 18:44:49.277 2010] [ 4609] shutdown complete
+[Tue Aug  3 18:44:49.435 2010] [ 4623] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:44:49.436 2010] [ 4623] accepting connections
+[Tue Aug  3 18:46:37.004 2010] [ 4623] caught SIGTERM, shutting down
+[Tue Aug  3 18:46:37.005 2010] [ 4623] shutdown complete
+[Tue Aug  3 18:46:37.344 2010] [ 4642] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:46:37.344 2010] [ 4642] accepting connections
+[Tue Aug  3 18:49:39.984 2010] [ 4642] caught SIGTERM, shutting down
+[Tue Aug  3 18:49:39.999 2010] [ 4642] shutdown complete
+[Tue Aug  3 18:49:40.386 2010] [ 4650] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:49:40.386 2010] [ 4650] accepting connections
+[Tue Aug  3 18:50:06.851 2010] [ 4650] caught SIGTERM, shutting down
+[Tue Aug  3 18:50:06.851 2010] [ 4650] shutdown complete
+[Tue Aug  3 18:50:07.049 2010] [ 4660] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:50:07.049 2010] [ 4660] accepting connections
+[Tue Aug  3 18:53:41.516 2010] [ 4660] caught SIGTERM, shutting down
+[Tue Aug  3 18:53:41.516 2010] [ 4660] shutdown complete
+[Tue Aug  3 18:53:41.776 2010] [ 4668] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:53:41.776 2010] [ 4668] accepting connections
+[Tue Aug  3 18:54:54.881 2010] [ 4668] caught SIGTERM, shutting down
+[Tue Aug  3 18:54:54.882 2010] [ 4668] shutdown complete
+[Tue Aug  3 18:54:55.884 2010] [ 4678] creating server socket on 127.0.0.1:9312
+[Tue Aug  3 18:54:55.884 2010] [ 4678] accepting connections

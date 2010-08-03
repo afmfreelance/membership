@@ -1,20 +1,31 @@
-<h1>Listing instruments</h1>
+<div id="sidebar">
+	<h2>Maintenance</h2>
+	<ul>
+		<li><%= link_to 'New instrument', new_instrument_path %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; Instruments</p>
+  </div>
+  <h2>Instruments</h2>
+	
+	<table>
+	  <tr>
+	    <th>Name</th>
+	  </tr>
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
+	<% @instruments.each do |instrument| %>
+	  <tr>
+	    <td><%=h instrument.name %></td>
+	    <td><%= link_to 'Edit', edit_instrument_path(instrument) %></td>
+	   
+	  </tr>
+	<% end %>
+	</table>
 
-<% @instruments.each do |instrument| %>
-  <tr>
-    <td><%=h instrument.name %></td>
-    <td><%= link_to 'Show', instrument %></td>
-    <td><%= link_to 'Edit', edit_instrument_path(instrument) %></td>
-    <td><%= link_to 'Destroy', instrument, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+	<br />
 
-<br />
-
-<%= link_to 'New instrument', new_instrument_path %>
+	
+</div>

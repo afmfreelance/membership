@@ -13,4 +13,12 @@ class Local < ActiveRecord::Base
   def sort_num
     self.number.split('-')[0]
   end
+  
+  def url=(value)
+     unless value =~ /https?:\/\/.*/ || value.blank?
+       write_attribute :url, "http://" + value.to_s
+     else
+       write_attribute :url, value
+     end
+   end
 end
