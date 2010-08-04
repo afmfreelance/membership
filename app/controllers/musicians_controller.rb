@@ -47,7 +47,7 @@ class MusiciansController < ApplicationController
     respond_to do |format|
       if @musician.save
         flash[:notice] = 'Musician was successfully created.'
-        format.html { redirect_to(@musician) }
+        format.html { redirect_to(edit_musician_path(@musician)) }
         format.xml  { render :xml => @musician, :status => :created, :location => @musician }
       else
         format.html { render :action => "new" }

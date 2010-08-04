@@ -58,3 +58,71 @@
 [Tue Aug  3 19:01:05.698 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] 70
 [Tue Aug  3 19:01:17.946 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
 [Tue Aug  3 19:01:47.317 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 10:25:15.295 2010] 0.019 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 10:53:15.647 2010] 0.006 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 10:53:21.310 2010] 0.027 sec [all/2/rel 1 (0,20)] [musician_core] plummerspace
+[Wed Aug  4 10:53:23.115 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] plummerspace
+[Wed Aug  4 13:06:38.567 2010] 0.028 sec [all/2/rel 0 (0,20)] [musician_core] 23
+[Wed Aug  4 13:09:17.607 2010] 0.041 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 13:16:48.486 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:17:14.067 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] cincinnati
+[Wed Aug  4 13:17:20.297 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] cincinnati
+[Wed Aug  4 13:17:29.034 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] cincinnati
+[Wed Aug  4 13:17:36.559 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:17:44.737 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 2
+[Wed Aug  4 13:17:52.603 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 2
+[Wed Aug  4 13:18:01.643 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 2
+[Wed Aug  4 13:18:05.395 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] st. louis
+[Wed Aug  4 13:18:07.160 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] st. louis
+[Wed Aug  4 13:18:09.081 2010] 0.000 sec [all/2/rel 0 (0,20)] [local_core] co
+[Wed Aug  4 13:18:12.178 2010] 0.000 sec [all/2/rel 0 (0,20)] [local_core] colorado
+[Wed Aug  4 13:18:13.290 2010] 0.000 sec [all/2/rel 0 (0,20)] [local_core] colorado
+[Wed Aug  4 13:18:13.752 2010] 0.000 sec [all/2/rel 0 (0,20)] [local_core] colorado
+[Wed Aug  4 13:18:19.328 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] denver
+[Wed Aug  4 13:18:30.781 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 13:18:35.947 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 13:18:38.033 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:18:41.326 2010] 0.000 sec [all/2/rel 2 (0,20)] [local_core] oh
+[Wed Aug  4 13:18:49.563 2010] 0.000 sec [all/2/rel 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:18:58.990 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:19:15.539 2010] 0.000 sec [all/2/rel 0 (0,20)] [local_core] minnesota
+[Wed Aug  4 13:19:18.022 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:19:28.252 2010] 0.000 sec [all/2/rel 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:30:52.797 2010] 0.000 sec [all/2/rel 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:30:55.200 2010] 0.000 sec [all/2/rel 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:30:58.755 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:38:17.292 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:41:22.266 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:41:26.376 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 10
+[Wed Aug  4 13:41:30.480 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:41:34.171 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] #10
+[Wed Aug  4 13:41:39.978 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 208
+[Wed Aug  4 13:41:44.452 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 208
+[Wed Aug  4 13:41:50.296 2010] 0.000 sec [all/2/rel 1 (0,20)] [local_core] 10
+[Wed Aug  4 13:41:55.111 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:44:24.970 2010] 0.015 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:44:35.664 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:44:53.330 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:44:53.444 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:45:12.103 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:45:12.554 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:45:24.431 2010] 0.000 sec [all/2/ext 4 (0,20)] [local_core] ohio
+[Wed Aug  4 13:45:29.163 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:45:35.068 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:50:48.426 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:50:50.556 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:52:25.394 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:52:25.604 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:52:42.895 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:52:43.114 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:58:14.496 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 13:58:28.185 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 13:58:28.426 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:02.420 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:04.386 2010] 0.000 sec [scan/2/rel 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:12.603 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:12.819 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:25.856 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:26.072 2010] 0.001 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:01:33.634 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 2
+[Wed Aug  4 14:01:37.830 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 197

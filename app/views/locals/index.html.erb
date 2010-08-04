@@ -9,6 +9,9 @@
 		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; Locals</p>
   </div>
 	<h2>AFM Locals</h2>
+	<% form_tag locals_path, :method => :get do -%>
+		<p><%= text_field_tag 'search', params[:search], :size => 25 %> <%= submit_tag 'Search' %></p>
+	<% end %>
 	<p><%= will_paginate @locals %></p>
 	<table class="listing">
 	  <tr>
@@ -16,20 +19,18 @@
 			<th>City</th>
 	    <th>Name</th>
 	    <th>Email</th>
-	    <th>Website</th>
-	    <th>Phone (primary)</th>  
+	    
+	    <th>Phone</th>  
 	  </tr>
 
 	<% @locals.each do |local| %>
 	  <tr>
-			<td><%=h local.number %></td>
+			<td>#<%=h local.number %></td>
 	    <td><%=h local.city_state_title %></td>
 			<td><%=h local.name %></td>
 	    <td><%= email_shortner(local.email) %></td>
-	    <td><%=h local.website %></td>
-	    <td><%=h local.phone_primary %></td>
 	    
-	    <td><%= link_to 'Show', local %></td>
+	    <td><%=h number_to_phone(local.phone, :area_code => true) %></td>
 	    <td><%= link_to 'Edit', edit_local_path(local) %></td>
 	  </tr>
 	<% end %>

@@ -2,7 +2,7 @@ class LocalsController < ApplicationController
   # GET /locals
   # GET /locals.xml
   def index
-    @locals = Local.paginate :page => params[:page]
+    @locals = Local.search params[:search], :sort_mode => :extended, :order => "sort_num ASC"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -34,7 +34,7 @@ class LocalsController < ApplicationController
 
   # GET /locals/1/edit
   def edit
-    @local = Local.find(params[:id])
+    @local = Local.find_by_number(params[:id])
   end
 
   # POST /locals
@@ -45,7 +45,7 @@ class LocalsController < ApplicationController
     respond_to do |format|
       if @local.save
         flash[:notice] = 'Local was successfully created.'
-        format.html { redirect_to(@local) }
+        format.html { redirect_to(edit_local_path(@local)) }
         format.xml  { render :xml => @local, :status => :created, :location => @local }
       else
         format.html { render :action => "new" }
@@ -57,12 +57,12 @@ class LocalsController < ApplicationController
   # PUT /locals/1
   # PUT /locals/1.xml
   def update
-    @local = Local.find(params[:id])
+    @local = Local.find_by_number(params[:id])
 
     respond_to do |format|
       if @local.update_attributes(params[:local])
         flash[:notice] = 'Local was successfully updated.'
-        format.html { redirect_to(@local) }
+        format.html { redirect_to(edit_local_path(@local)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -74,7 +74,7 @@ class LocalsController < ApplicationController
   # DELETE /locals/1
   # DELETE /locals/1.xml
   def destroy
-    @local = Local.find(params[:id])
+    @local = Local.find_by_number(params[:id])
     @local.destroy
 
     respond_to do |format|

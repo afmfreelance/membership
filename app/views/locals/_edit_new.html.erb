@@ -1,0 +1,77 @@
+<p style="color: green"><%= flash[:notice] %></p>
+<% form_for(@local) do |f| %>
+  <%= f.error_messages %>
+	<p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p class="multifield">
+    <%= f.label :number, "Local #" %><br />
+    <%= f.text_field :number, :size => 6 %>
+  </p>
+
+	<p class="multifield">
+    <%= f.label :city_state_title, "City, State/Province label" %><br />
+    <%= f.text_field :city_state_title, :size => 25 %>
+  </p>
+	<p class="multifield">
+    <%= f.label :country_id,'Country' %><br />
+    <%= f.select :country_id, Country.all.collect {|c| [ c.name, c.id ] }, :include_blank => true %>
+  </p>
+ 
+  <p class="multibreak">
+    <%= f.label :chartered %><br />
+    <%= f.date_select :chartered, { :start_year => 1880, :end_year => Time.now.year, :order => [:month, :day, :year] } %>
+  </p>
+  <p class="multifield">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p class="multifield">
+    <%= f.label :url, "Website URL <em>(ex. http://afm.org)</em>" %><br />
+    <%= f.text_field :url, :size => 35 %>
+  </p>
+
+	<fieldset class="multibreak">
+		<legend>Mailing address</legend>
+  	<p style="padding-top: 1em" class="multibreak">
+	    <%= f.label :address, 'Street address' %><br />
+	    <%= f.text_field :address, :size => 35 %>
+	  </p>
+	  <p class="multifield">
+	    <%= f.label :city %><br />
+	    <%= f.text_field :city %>
+	  </p>
+	  <p class="multifield">
+	    <%= f.label :state_province_id, 'State / Province' %><br />
+	    <%= f.select :state_province_id, StateProvince.all.collect {|s| [ s.name, s.id ] }, :include_blank => true %>
+	  </p>
+	  <p class="multifield">
+	    <%= f.label :postal_code %><br />
+	    <%= f.text_field :postal_code, :size => 10 %>
+	  </p>
+  </fieldset>
+  <p class="multibreak multifield">
+    <%= f.label :phone_primary, "Office phone" %><br />
+    <%= f.text_field :phone_primary, :value => number_to_phone(f.object.phone_primary, :area_code => true), :size => 15 %>
+  </p>
+  <!--<p>
+    <%= f.label :phone2 %><br />
+    <%= f.text_field :phone2 %>
+  </p>
+  <p>
+    <%= f.label :phone3 %><br />
+    <%= f.text_field :phone3 %>
+  </p>-->
+ 	<p class="multifield">
+    <%= f.label :fax_number %><br />
+    <%= f.text_field :fax_number, :value =>  number_to_phone(f.object.fax_number, :area_code => true), :size => 15 %>
+  </p>
+  <p class="multibreak">
+    <%= f.label :jurisdiction %><br />
+    <%= f.text_area :jurisdiction, :rows => 5, :cols => 80 %>
+  </p>
+  <p>
+    <%= f.submit form_action %>
+  </p>
+<% end %>

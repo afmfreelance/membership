@@ -42,3 +42,37 @@
 [Tue Aug  3 19:00:21.435 2010] [ 4708] shutdown complete
 [Tue Aug  3 19:00:21.607 2010] [ 4719] creating server socket on 127.0.0.1:9312
 [Tue Aug  3 19:00:21.607 2010] [ 4719] accepting connections
+[Wed Aug  4 10:25:11.878 2010] [  317] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 10:25:11.892 2010] [  317] accepting connections
+[Wed Aug  4 13:16:44.409 2010] [  317] caught SIGTERM, shutting down
+[Wed Aug  4 13:16:44.585 2010] [  317] shutdown complete
+[Wed Aug  4 13:16:45.203 2010] [  462] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:16:45.204 2010] [  462] accepting connections
+[Wed Aug  4 13:30:23.133 2010] [  462] caught SIGTERM, shutting down
+[Wed Aug  4 13:30:23.134 2010] [  462] shutdown complete
+[Wed Aug  4 13:30:23.418 2010] [  498] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:30:23.418 2010] [  498] accepting connections
+[Wed Aug  4 13:43:17.590 2010] [  498] caught SIGTERM, shutting down
+[Wed Aug  4 13:43:17.591 2010] [  498] shutdown complete
+[Wed Aug  4 13:43:17.865 2010] [  553] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:43:17.865 2010] [  553] accepting connections
+[Wed Aug  4 13:48:53.275 2010] [  553] caught SIGTERM, shutting down
+[Wed Aug  4 13:48:53.327 2010] [  553] shutdown complete
+[Wed Aug  4 13:48:53.529 2010] [  574] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:48:53.529 2010] [  574] accepting connections
+[Wed Aug  4 13:50:42.465 2010] [  574] caught SIGTERM, shutting down
+[Wed Aug  4 13:50:42.465 2010] [  574] shutdown complete
+[Wed Aug  4 13:50:42.647 2010] [  583] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:50:42.647 2010] [  583] accepting connections
+[Wed Aug  4 13:58:05.591 2010] [  583] caught SIGTERM, shutting down
+[Wed Aug  4 13:58:05.638 2010] [  583] shutdown complete
+[Wed Aug  4 13:58:05.844 2010] [  600] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:58:05.844 2010] [  600] accepting connections
+[Wed Aug  4 13:58:47.361 2010] [  600] caught SIGTERM, shutting down
+[Wed Aug  4 13:58:47.362 2010] [  600] shutdown complete
+[Wed Aug  4 13:58:47.559 2010] [  611] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 13:58:47.559 2010] [  611] accepting connections
+[Wed Aug  4 14:00:57.435 2010] [  611] caught SIGTERM, shutting down
+[Wed Aug  4 14:00:57.436 2010] [  611] shutdown complete
+[Wed Aug  4 14:00:57.792 2010] [  619] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 14:00:57.792 2010] [  619] accepting connections
