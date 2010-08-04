@@ -2,7 +2,7 @@ class MusiciansController < ApplicationController
   # GET /musicians
   # GET /musicians.xml
   def index
-    @musicians = Musician.search params[:search], :page => params[:page]#, :order => 'lastname ASC'
+    @musicians = Musician.search params[:search], :page => params[:page], :order => 'lastname ASC, firstname ASC, city ASC'
     
     respond_to do |format|
       format.html # index.html.erb

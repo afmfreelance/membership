@@ -22,8 +22,9 @@ class Musician < ActiveRecord::Base
   define_index do
    indexes lastname, :sortable => true
    indexes firstname, :sortable => true
+   indexes city, :sortable => true
    indexes [stage_firstname, stage_lastname], :as => :stage_name
-   indexes mi, city, ssn, email, birthdate
+   indexes mi, ssn, email, birthdate
    indexes [state_province.name, state_province.abbreviation], :as => :state_province
    indexes [country.name, country.abbreviation], :as => :country
    #indexes [, state_provinces.abbreviation], :as => :state_provinces

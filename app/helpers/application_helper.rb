@@ -18,8 +18,8 @@ module ApplicationHelper
   def email_shortner(email)
     unless email.blank?
 			out = '<a href="mailto:' + email + '">'
-			if email.length > 25
-			  out += email.slice(0,15) + '&hellip;' + email.slice(-10,10)
+			if email.length > 15
+			  out += email.slice(0,10) + '&hellip;' + email.slice(-5,5)
 			else
 				out += email
 			end
