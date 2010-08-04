@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  quarter: 1
+  month: 1
+  day: 1
+  title: MyString
+
+two:
+  quarter: 1
+  month: 1
+  day: 1
+  title: MyString

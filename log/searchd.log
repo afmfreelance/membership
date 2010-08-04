@@ -84,3 +84,27 @@
 [Wed Aug  4 14:03:36.103 2010] [  649] shutdown complete
 [Wed Aug  4 14:03:36.336 2010] [  658] creating server socket on 127.0.0.1:9312
 [Wed Aug  4 14:03:36.337 2010] [  658] accepting connections
+[Wed Aug  4 17:52:51.985 2010] [  329] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 17:52:51.999 2010] [  329] accepting connections
+[Wed Aug  4 18:29:08.799 2010] [  329] rotating indices (seamless=1)
+[Wed Aug  4 18:29:08.940 2010] [  329] rotating index 'musician_core': success
+[Wed Aug  4 18:29:08.945 2010] [  329] rotating index 'local_core': success
+[Wed Aug  4 18:29:08.945 2010] [  329] rotating finished
+[Wed Aug  4 18:30:36.233 2010] [  329] rotating indices (seamless=1)
+[Wed Aug  4 18:30:36.282 2010] [  329] rotating index 'musician_core': success
+[Wed Aug  4 18:30:36.288 2010] [  329] rotating index 'local_core': success
+[Wed Aug  4 18:30:36.288 2010] [  329] rotating finished
+[Wed Aug  4 18:44:22.853 2010] [  329] caught SIGTERM, shutting down
+[Wed Aug  4 18:44:22.881 2010] [  329] shutdown complete
+[Wed Aug  4 18:44:23.674 2010] [ 7436] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 18:44:23.675 2010] [ 7436] accepting connections
+[Wed Aug  4 18:45:48.912 2010] [ 7436] rotating indices (seamless=1)
+[Wed Aug  4 18:45:48.923 2010] [ 7436] rotating index 'musician_delta': success
+[Wed Aug  4 18:45:48.923 2010] [ 7436] rotating finished
+[Wed Aug  4 18:46:31.200 2010] [ 7436] rotating indices (seamless=1)
+[Wed Aug  4 18:46:31.208 2010] [ 7436] rotating index 'musician_delta': success
+[Wed Aug  4 18:46:31.208 2010] [ 7436] rotating finished
+[Wed Aug  4 18:49:33.325 2010] [ 7436] caught SIGTERM, shutting down
+[Wed Aug  4 18:49:33.391 2010] [ 7436] shutdown complete
+[Wed Aug  4 18:49:33.965 2010] [ 7465] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 18:49:33.965 2010] [ 7465] accepting connections

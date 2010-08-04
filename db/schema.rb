@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100804150038) do
+ActiveRecord::Schema.define(:version => 20100804222710) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20100804150038) do
     t.integer  "sort_num"
     t.integer  "lif"
     t.string   "fax_number"
+    t.boolean  "delta",             :default => true, :null => false
   end
 
   create_table "memberships", :force => true do |t|
@@ -63,9 +64,12 @@ ActiveRecord::Schema.define(:version => 20100804150038) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "start"
-    t.date     "end"
     t.integer  "status_id"
     t.integer  "category_id"
+    t.integer  "start_year"
+    t.integer  "start_quarter"
+    t.integer  "finish_year"
+    t.integer  "finish_quarter"
   end
 
   create_table "musician_instruments", :force => true do |t|
@@ -109,6 +113,21 @@ ActiveRecord::Schema.define(:version => 20100804150038) do
     t.integer  "address_confidential", :default => 0
     t.text     "notes"
     t.integer  "im_online",            :default => 0
+    t.string   "intune_id"
+    t.string   "address2"
+    t.string   "state_province_temp"
+    t.boolean  "delta",                :default => true, :null => false
+  end
+
+  create_table "quarters", :force => true do |t|
+    t.integer  "quarter"
+    t.integer  "start_month"
+    t.integer  "start_day"
+    t.integer  "end_month"
+    t.integer  "end_day"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "state_provinces", :force => true do |t|

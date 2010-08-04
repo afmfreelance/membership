@@ -20,6 +20,7 @@ class Local < ActiveRecord::Base
    indexes [country.name, country.abbreviation], :as => :country
    has "CAST(SUBSTRING_INDEX(`number`, '-', 1) as UNSIGNED)", :as => :sort_num, :type => :integer
    #group_by :sort_num
+   set_property :delta => true
   end
   
   def to_param #use local num in route resources rather than id
@@ -51,4 +52,6 @@ class Local < ActiveRecord::Base
        write_attribute :url, value
      end
    end
+   
+  
 end

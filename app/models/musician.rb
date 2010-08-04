@@ -12,22 +12,27 @@ class Musician < ActiveRecord::Base
   before_validation :phones_strip, :names_format
   after_save :remove_dups
   
-  validates_presence_of :firstname, :lastname, :birthdate, :email, :address, :city, :state_province_id, :postal_code, :country_id, :primary_phone_choice
+  validates_presence_of :firstname, :lastname, :birthdate, :address, :city, :state_province_id, :postal_code, :country_id
+  #:email, :primary_phone_choice
   validate :at_least_one_phone_entered, :primary_phone_exists
   
   cattr_reader :per_page
   @@per_page = 20
    
   define_index do
-   indexes [firstname, lastname], :as => :name
+   indexes lastname, :sortable => true
+   indexes firstname, :sortable => true
    indexes [stage_firstname, stage_lastname], :as => :stage_name
-   indexes mi, city, ssn, email
+   indexes mi, city, ssn, email, birthdate
    indexes [state_province.name, state_province.abbreviation], :as => :state_province
    indexes [country.name, country.abbreviation], :as => :country
    #indexes [, state_provinces.abbreviation], :as => :state_provinces
    #indexes  :as => :state_province_abbreviation
    indexes locals.number, :as => :local_number
    indexes instruments.name, :as => :instruments
+   indexes "SUBSTRING_INDEX(`birthdate`, '-', 1)", :as => :birth_year
+   has
+   set_property :delta => true
   end
    
   def full_name

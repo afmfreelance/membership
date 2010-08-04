@@ -2,7 +2,7 @@ class MusiciansController < ApplicationController
   # GET /musicians
   # GET /musicians.xml
   def index
-    @musicians = Musician.search params[:search] #paginate :page => params[:page], :order => 'created_at DESC'
+    @musicians = Musician.search params[:search], :page => params[:page]#, :order => 'lastname ASC'
     
     respond_to do |format|
       format.html # index.html.erb
@@ -27,7 +27,7 @@ class MusiciansController < ApplicationController
     @musician = Musician.new(:primary_phone_choice => 0)
     3.times { @musician.musician_instruments.build }
     @musician.memberships.build
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @musician }
