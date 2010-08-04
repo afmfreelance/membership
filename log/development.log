@@ -33317,3 +33317,518 @@ Rendering locals/index
   [4;32;1mSphinx (0.003567s)[0m   [0mFound 1 results[0m
   [4;36;1mLocal Load (0.4ms)[0m   [0;1mSELECT * FROM `locals` WHERE (`locals`.`id` IN (57)) ORDER BY sort_num ASC[0m
 Completed in 82ms (View: 12, DB: 8) | 200 OK [http://localhost/locals?search=197&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:02:03) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:04) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.8ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.004548s)[0m   [0mFound 244 results[0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM `locals` WHERE (`locals`.`id` IN (1,57,99,133,162,194,214,228,239,2,10,14,26,33,38,43,49,58,62,67)) ORDER BY sort_num ASC[0m
+Completed in 178ms (View: 32, DB: 17) | 200 OK [http://localhost/locals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:10) [GET]
+  Parameters: {"search"=>"2", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: '2'[0m
+  [4;32;1mSphinx (0.003570s)[0m   [0mFound 1 results[0m
+  [4;35;1mLocal Load (0.4ms)[0m   [0mSELECT * FROM `locals` WHERE (`locals`.`id` IN (57)) ORDER BY sort_num ASC[0m
+Completed in 150ms (View: 13, DB: 8) | 200 OK [http://localhost/locals?search=2&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:13) [GET]
+  Parameters: {"search"=>"20", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: '20'[0m
+  [4;32;1mSphinx (0.003976s)[0m   [0mFound 1 results[0m
+  [4;35;1mLocal Load (0.4ms)[0m   [0mSELECT * FROM `locals` WHERE (`locals`.`id` IN (58)) ORDER BY sort_num ASC[0m
+Completed in 82ms (View: 12, DB: 7) | 200 OK [http://localhost/locals?search=20&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:16) [GET]
+  Parameters: {"search"=>"denver", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'denver'[0m
+  [4;32;1mSphinx (0.003438s)[0m   [0mFound 1 results[0m
+  [4;35;1mLocal Load (0.4ms)[0m   [0mSELECT * FROM `locals` WHERE (`locals`.`id` IN (58)) ORDER BY sort_num ASC[0m
+Completed in 161ms (View: 12, DB: 7) | 200 OK [http://localhost/locals?search=denver&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:20) [GET]
+  Parameters: {"search"=>"minnesota", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'minnesota'[0m
+  [4;32;1mSphinx (0.003227s)[0m   [0mFound 0 results[0m
+Completed in 76ms (View: 8, DB: 7) | 200 OK [http://localhost/locals?search=minnesota&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:23) [GET]
+  Parameters: {"search"=>"minneapolis", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'minneapolis'[0m
+  [4;32;1mSphinx (0.003358s)[0m   [0mFound 0 results[0m
+Completed in 76ms (View: 8, DB: 7) | 200 OK [http://localhost/locals?search=minneapolis&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:25) [GET]
+  Parameters: {"search"=>"minneapolis", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'minneapolis'[0m
+  [4;32;1mSphinx (0.004715s)[0m   [0mFound 0 results[0m
+Completed in 152ms (View: 9, DB: 16) | 200 OK [http://localhost/locals?search=minneapolis&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:29) [GET]
+  Parameters: {"search"=>"20", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: '20'[0m
+  [4;32;1mSphinx (0.003383s)[0m   [0mFound 1 results[0m
+  [4;36;1mLocal Load (0.4ms)[0m   [0;1mSELECT * FROM `locals` WHERE (`locals`.`id` IN (58)) ORDER BY sort_num ASC[0m
+Completed in 82ms (View: 12, DB: 8) | 200 OK [http://localhost/locals?search=20&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:02:34) [GET]
+  Parameters: {"search"=>"273", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (423.5ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (138.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: '273'[0m
+  [4;32;1mSphinx (0.003265s)[0m   [0mFound 0 results[0m
+Completed in 714ms (View: 7, DB: 564) | 200 OK [http://localhost/locals?search=273&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:02:37) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:02:39) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003626s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 172ms (View: 28, DB: 19) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (19.4ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mSQL (11.9ms)[0m   [0mSELECT @@global.sql_mode, @@session.sql_mode;[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mInstrument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `instruments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT @@global.sql_mode, @@session.sql_mode;[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mInstrument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `instruments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:03:46) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:03:47) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003188s)[0m   [0mFound 1 results[0m
+  [4;35;1mMusician Load (0.5ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.6ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 165ms (View: 17, DB: 19) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:03:56) [GET]
+  Parameters: {"search"=>"20-", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '20-'[0m
+  [4;32;1mSphinx (0.003092s)[0m   [0mFound 0 results[0m
+Completed in 77ms (View: 7, DB: 7) | 200 OK [http://localhost/musicians?search=20-&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:03:59) [GET]
+  Parameters: {"search"=>"20", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '20'[0m
+  [4;32;1mSphinx (0.003014s)[0m   [0mFound 0 results[0m
+Completed in 154ms (View: 7, DB: 8) | 200 OK [http://localhost/musicians?search=20&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:00) [GET]
+  Parameters: {"search"=>"20", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '20'[0m
+  [4;32;1mSphinx (0.003379s)[0m   [0mFound 0 results[0m
+Completed in 84ms (View: 8, DB: 16) | 200 OK [http://localhost/musicians?search=20&commit=Search]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:04:02) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:04) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003265s)[0m   [0mFound 1 results[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;36;1mStateProvince Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (1.6ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 96ms (View: 17, DB: 20) | 200 OK [http://localhost/musicians]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-08-04 14:04:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMusician Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;35;1mTitle Load (0.3ms)[0m   [0mSELECT * FROM `titles` [0m
+  [4;36;1mTitle Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `titles`[0m
+Rendered musicians/_general (21.7ms)
+  [4;35;1mStateProvince Load (0.4ms)[0m   [0mSELECT * FROM `state_provinces` [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_contact (20.6ms)
+  [4;35;1mMusicianInstrument Load (0.4ms)[0m   [0mSELECT * FROM `musician_instruments` WHERE (`musician_instruments`.musician_id = 1) ORDER BY sort ASC[0m
+  [4;36;1mMusicianInstrument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `musician_instruments`[0m
+  [4;35;1mInstrument Load (0.9ms)[0m   [0mSELECT * FROM `instruments` ORDER BY name ASC[0m
+  [4;36;1mInstrument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `instruments`[0m
+Rendered musicians/_musician_instrument_fields (36.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.9ms)
+Rendered musicians/_music (158.7ms)
+  [4;35;1mLocal Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) [0m
+  [4;35;1mLocal Load (1.7ms)[0m   [0mSELECT `locals`.* FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) ORDER BY sort_num ASC[0m
+  [4;36;1mMembership Load (0.3ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (`memberships`.musician_id = 1) [0m
+  [4;35;1mMembership Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mLocal Load (4.2ms)[0m   [0;1mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;35;1mCategory Load (7.9ms)[0m   [0mSELECT * FROM `categories` [0m
+  [4;36;1mCategory Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered musicians/_membership_fields (61.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered musicians/_membership_fields (163.2ms)
+Rendered musicians/_membership (337.6ms)
+Rendered musicians/_edit_new (566.7ms)
+Completed in 737ms (View: 571, DB: 46) | 200 OK [http://localhost/musicians/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:15) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003118s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.5ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 97ms (View: 17, DB: 19) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:17) [GET]
+  Parameters: {"search"=>"2", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '2'[0m
+  [4;32;1mSphinx (0.003676s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 152ms (View: 18, DB: 10) | 200 OK [http://localhost/musicians?search=2&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:19) [GET]
+  Parameters: {"search"=>"2", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '2'[0m
+  [4;32;1mSphinx (0.003221s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 99ms (View: 17, DB: 20) | 200 OK [http://localhost/musicians?search=2&commit=Search]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:20) [GET]
+  Parameters: {"search"=>"2", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: '2'[0m
+  [4;32;1mSphinx (0.004158s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 188ms (View: 18, DB: 19) | 200 OK [http://localhost/musicians?search=2&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:23) [GET]
+  Parameters: {"search"=>"local 2", "commit"=>"Search"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: 'local 2'[0m
+  [4;32;1mSphinx (0.003324s)[0m   [0mFound 0 results[0m
+Completed in 140ms (View: 72, DB: 7) | 200 OK [http://localhost/musicians?search=local+2&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:38) [GET]
+  Parameters: {"search"=>"", "commit"=>"Search"}
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (12.5ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.004033s)[0m   [0mFound 1 results[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;36;1mStateProvince Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `state_provinces`[0m
+  [4;35;1mStateProvince Load (0.3ms)[0m   [0mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 99ms (View: 17, DB: 19) | 200 OK [http://localhost/musicians?search=&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:04:54) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:04:56) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003171s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (0.3ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 179ms (View: 17, DB: 19) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:04:57) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocalsController#index (for 127.0.0.1 at 2010-08-04 14:04:58) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLocal Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMusician Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering locals/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.004554s)[0m   [0mFound 244 results[0m
+  [4;35;1mLocal Load (0.9ms)[0m   [0mSELECT * FROM `locals` WHERE (`locals`.`id` IN (1,57,99,133,162,194,214,228,239,2,10,14,26,33,38,43,49,58,62,67)) ORDER BY sort_num ASC[0m
+Completed in 179ms (View: 34, DB: 17) | 200 OK [http://localhost/locals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-04 14:05:03) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#index (for 127.0.0.1 at 2010-08-04 14:05:04) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLocal Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `locals`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMusician Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `musicians`[0m
+Rendering template within layouts/application
+Rendering musicians/index
+  [4;32;1mSphinx[0m   [0mQuerying: ''[0m
+  [4;32;1mSphinx (0.003400s)[0m   [0mFound 1 results[0m
+  [4;36;1mMusician Load (0.4ms)[0m   [0;1mSELECT * FROM `musicians` WHERE (`musicians`.`id` IN (1)) [0m
+  [4;35;1mStateProvince Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mStateProvince Load (1.7ms)[0m   [0;1mSELECT * FROM `state_provinces` WHERE (`state_provinces`.`id` = 33) [0m
+Completed in 179ms (View: 96, DB: 21) | 200 OK [http://localhost/musicians]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MusiciansController#edit (for 127.0.0.1 at 2010-08-04 14:05:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMusician Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `musicians`[0m
+  [4;35;1mMusician Load (0.4ms)[0m   [0mSELECT * FROM `musicians` WHERE (`musicians`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering musicians/edit
+  [4;36;1mTitle Load (0.3ms)[0m   [0;1mSELECT * FROM `titles` [0m
+  [4;35;1mTitle Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `titles`[0m
+Rendered musicians/_general (17.6ms)
+  [4;36;1mStateProvince Load (0.4ms)[0m   [0;1mSELECT * FROM `state_provinces` [0m
+  [4;35;1mStateProvince Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `state_provinces`[0m
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+Rendered musicians/_contact (17.0ms)
+  [4;36;1mMusicianInstrument Load (0.4ms)[0m   [0;1mSELECT * FROM `musician_instruments` WHERE (`musician_instruments`.musician_id = 1) ORDER BY sort ASC[0m
+  [4;35;1mMusicianInstrument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `musician_instruments`[0m
+  [4;36;1mInstrument Load (0.9ms)[0m   [0;1mSELECT * FROM `instruments` ORDER BY name ASC[0m
+  [4;35;1mInstrument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `instruments`[0m
+Rendered musicians/_musician_instrument_fields (8.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `instruments` ORDER BY name ASC[0m
+Rendered musicians/_musician_instrument_fields (4.1ms)
+Rendered musicians/_music (42.6ms)
+  [4;36;1mLocal Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locals`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) [0m
+  [4;36;1mLocal Load (1.7ms)[0m   [0;1mSELECT `locals`.* FROM `locals` INNER JOIN `memberships` ON `locals`.id = `memberships`.local_id WHERE ((`memberships`.musician_id = 1)) ORDER BY sort_num ASC[0m
+  [4;35;1mMembership Load (0.3ms)[0m   [0mSELECT * FROM `memberships` WHERE (`memberships`.musician_id = 1) [0m
+  [4;36;1mMembership Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mLocal Load (4.2ms)[0m   [0mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `categories` [0m
+  [4;35;1mCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered musicians/_membership_fields (119.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `locals` ORDER BY sort_num ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` [0m
+Rendered musicians/_membership_fields (18.7ms)
+Rendered musicians/_membership (234.3ms)
+Rendered musicians/_edit_new (315.4ms)
+Completed in 395ms (View: 303, DB: 37) | 200 OK [http://localhost/musicians/1/edit]

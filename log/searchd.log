@@ -76,3 +76,11 @@
 [Wed Aug  4 14:00:57.436 2010] [  611] shutdown complete
 [Wed Aug  4 14:00:57.792 2010] [  619] creating server socket on 127.0.0.1:9312
 [Wed Aug  4 14:00:57.792 2010] [  619] accepting connections
+[Wed Aug  4 14:03:04.661 2010] [  619] caught SIGTERM, shutting down
+[Wed Aug  4 14:03:04.662 2010] [  619] shutdown complete
+[Wed Aug  4 14:03:04.866 2010] [  649] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 14:03:04.866 2010] [  649] accepting connections
+[Wed Aug  4 14:03:36.102 2010] [  649] caught SIGTERM, shutting down
+[Wed Aug  4 14:03:36.103 2010] [  649] shutdown complete
+[Wed Aug  4 14:03:36.336 2010] [  658] creating server socket on 127.0.0.1:9312
+[Wed Aug  4 14:03:36.337 2010] [  658] accepting connections

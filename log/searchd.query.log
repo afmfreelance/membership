@@ -126,3 +126,27 @@
 [Wed Aug  4 14:01:26.072 2010] 0.001 sec [scan/2/ext 244 (0,20)] [local_core] 
 [Wed Aug  4 14:01:33.634 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 2
 [Wed Aug  4 14:01:37.830 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 197
+[Wed Aug  4 14:02:04.965 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:02:10.975 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 2
+[Wed Aug  4 14:02:13.615 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 20
+[Wed Aug  4 14:02:16.905 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] denver
+[Wed Aug  4 14:02:20.529 2010] 0.000 sec [all/2/ext 0 (0,20)] [local_core] minnesota
+[Wed Aug  4 14:02:23.753 2010] 0.000 sec [all/2/ext 0 (0,20)] [local_core] minneapolis
+[Wed Aug  4 14:02:25.281 2010] 0.000 sec [all/2/ext 0 (0,20)] [local_core] minneapolis
+[Wed Aug  4 14:02:29.086 2010] 0.000 sec [all/2/ext 1 (0,20)] [local_core] 20
+[Wed Aug  4 14:02:35.561 2010] 0.000 sec [all/2/ext 0 (0,20)] [local_core] 273
+[Wed Aug  4 14:02:39.285 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:03:47.989 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:03:56.261 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] 20-
+[Wed Aug  4 14:03:59.632 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] 20
+[Wed Aug  4 14:04:00.924 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] 20
+[Wed Aug  4 14:04:04.425 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:04:15.604 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:04:17.629 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] 2
+[Wed Aug  4 14:04:19.238 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] 2
+[Wed Aug  4 14:04:20.989 2010] 0.000 sec [all/2/rel 1 (0,20)] [musician_core] 2
+[Wed Aug  4 14:04:23.585 2010] 0.000 sec [all/2/rel 0 (0,20)] [musician_core] local 2
+[Wed Aug  4 14:04:38.938 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:04:56.363 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 
+[Wed Aug  4 14:04:59.069 2010] 0.000 sec [scan/2/ext 244 (0,20)] [local_core] 
+[Wed Aug  4 14:05:04.945 2010] 0.000 sec [scan/2/rel 1 (0,20)] [musician_core] 

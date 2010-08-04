@@ -15,8 +15,7 @@ class Local < ActiveRecord::Base
   validates_uniqueness_of :name, :number
   
   define_index do
-   indexes :name, :sortable => true
-   indexes number, city, email
+   indexes :name, city_state_title, number, city, email
    indexes [state_province.name, state_province.abbreviation], :as => :state_province
    indexes [country.name, country.abbreviation], :as => :country
    has "CAST(SUBSTRING_INDEX(`number`, '-', 1) as UNSIGNED)", :as => :sort_num, :type => :integer
