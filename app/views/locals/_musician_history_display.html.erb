@@ -1,0 +1,18 @@
+<table>
+  <tr>
+		<th>Join Date</th>
+		<th>Paid Through</th>
+		<th>Category</th>
+		<th>Status</th>
+  </tr>
+	<% @memberships.each do |membership| %>
+		<tr>
+			<td><%= membership.start %></td>
+			<td><%= quarter_to_date(membership.finish_quarter, membership.finish_year) %></td>
+
+	    <td><%= membership.category.name if membership.category %><%#= f.select :category_id, Category.all.collect {|c| [ c.name, c.id ] } %></td>
+			<td><%= membership.status.name if membership.status %></td>
+
+	  </tr>
+	<% end %>
+</table>

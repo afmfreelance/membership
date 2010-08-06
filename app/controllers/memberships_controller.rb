@@ -2,15 +2,7 @@ class MembershipsController < ApplicationController
   # GET /memberships
   # GET /memberships.xml
   def index
-    #if redirected from musician->local->memberships page
-    if params[:musician_id] && params[:local_id]
-      @memberships = Membership.find(:all, :include => [:category, :status, :local, :musician], :conditions => ['musician_id = ? and locals.number = ?', params[:musician_id], params[:local_id]])
-      @musician = Musician.find(params[:musician_id])
-      @local = Local.find_by_number(params[:local_id])
-    else
-      @memberships = Membership.all
-    end
-    
+    @memberships = Membership.all
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @memberships }
@@ -37,6 +29,8 @@ class MembershipsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @membership }
+      #format.js { render :partial => "locals/membership_fields" } 
+      
     end
   end
 

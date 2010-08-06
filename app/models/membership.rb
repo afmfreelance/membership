@@ -5,7 +5,6 @@ class Membership < ActiveRecord::Base
   belongs_to :category
   before_validation :set_start_quarter
   validates_presence_of :local
-
   
   def set_start_quarter   
     self.start_quarter = Membership.quarter(start.strftime('%m')) if start_quarter.blank?

@@ -1,0 +1,7 @@
+<% if @musician.locals.size > 0 %>
+	<ul>
+		<% @musician.locals.each do |local| %>
+			<li><%= link_to local.name, musician_local_path(@musician, local) %></li>
+		<% end %>
+	</ul>
+<% end %>

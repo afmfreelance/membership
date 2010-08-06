@@ -185,3 +185,4 @@ ol#instrument_list li { cursor: move; margin-bottom: 1em; }
 #local_list { float: left; }
 ul.fields_list { list-style: none; margin-left: 0; padding-left: 0; }
 ul.fields_list li { margin-bottom: .5em; margin-left: 1em; padding-left: 0; }
+#musician_history_edit { display : none; }

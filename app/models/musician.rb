@@ -27,8 +27,7 @@ class Musician < ActiveRecord::Base
    indexes mi, ssn, email, birthdate
    indexes [state_province.name, state_province.abbreviation], :as => :state_province
    indexes [country.name, country.abbreviation], :as => :country
-   #indexes [, state_provinces.abbreviation], :as => :state_provinces
-   #indexes  :as => :state_province_abbreviation
+
    indexes locals.number, :as => :local_number
    indexes instruments.name, :as => :instruments
    indexes "SUBSTRING_INDEX(`birthdate`, '-', 1)", :as => :birth_year

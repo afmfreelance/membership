@@ -7,6 +7,16 @@ $(document).ready(function(){
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 });
+
+jQuery.fn.submitWithAjax = function() {
+  this.submit(function() {
+    $.post(this.action, $(this).serialize(), null, "script");
+    return false;
+  })
+  return this;
+};
+
+
 //so far used in jquery ui: sortable, tabs
 //functions
 function remove_fields(link) {

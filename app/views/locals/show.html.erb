@@ -1,30 +1,30 @@
-<p>
-  <b>Name:</b>
-  <%=h @local.name %>
-</p>
+<%- content_for(:head) do -%>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<%= javascript_include_tag 'musician_memberships' -%>
 
-<p>
-  <b>Number:</b>
-  <%=h @local.number %>
-</p>
+<%- end -%>
+<div id="sidebar">
+	<h3>Maintenance</h3>
+	<ul>
+		<!--><li><%= link_to 'View', @musician %></li>-->
+		<li><%= link_to 'Delete musician', @musician, :confirm => 'Are you sure?', :method => :delete %></li>
+		<li><%= link_to 'Override membership history', {}, {:id => 'edit_musician_history'} %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Musicians', musicians_path %> &rarr; <%= link_to @musician.full_name, edit_musician_path(@musician) %> &rarr; Local <%= @local.number %></p>
+  </div>
 
-<p>
-  <b>Chartered:</b>
-  <%=h @local.chartered %>
-</p>
-
-<p>
-  <b>Jurisdiction:</b>
-  <%=h @local.jurisdiction %>
-</p>
-
-<p>
-  <b>Website:</b>
-  <%=h @local.url %>
-</p>
-
-
-
-
-<%= link_to 'Edit', edit_local_path(@local) %> |
-<%= link_to 'Back', locals_path %>
+	<h2><%= @musician.full_name %> &rarr; Local <%= @local.number %></h2>
+	<h3>Membership History</h3>
+	<div id="musician_history_display">
+		<%= render 'musician_history_display' %>
+	</div>
+	<div id="musician_history_edit">
+		<%= render 'musician_history_edit' %>
+	</div>
+	
+	<%#= link_to 'Re-join member', new_musician_local_membership_path(@musician,@local) %>
+</div>
