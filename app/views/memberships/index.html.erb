@@ -1,0 +1,36 @@
+<div id="sidebar">
+	<h3>Maintenance</h3>
+	<ul>
+		<!--><li><%= link_to 'View', @musician %></li>-->
+		<li><%= link_to 'Delete musician', @musician, :confirm => 'Are you sure?', :method => :delete %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Musicians', musicians_path %> &rarr; <%= link_to @musician.full_name, edit_musician_path(@musician) %> &rarr; Local <%= @local.number %></p>
+  </div>
+	<h2><%= @musician.full_name %> &rarr; Local <%= @local.number %></h2>
+	<table>
+	  <tr>
+			<th>Start date</th>
+			<th>Paid through</th>
+			<th>Category</th>
+			<th>Status</th>
+	  </tr>
+
+	<% @memberships.each do |membership| %>
+	  <tr>
+			<td><%= membership.start %></td>
+			<td><%= quarter_to_date(membership.finish_quarter, membership.finish_year) %></td>
+	    <td><%= membership.category.name if membership.category %></td>
+			<td><%= membership.status.name if membership.status %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
+
+
+
+
+<%#= link_to 'New membership', new_membership_path %>

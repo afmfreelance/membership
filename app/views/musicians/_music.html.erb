@@ -6,5 +6,7 @@
 			<%= render 'musician_instrument_fields', :f => builder %>
 		<% end %>
 	</ol>
+
 	<%= link_to_add_fields('Add instrument', f, :musician_instruments) %>
 </fieldset>
+	<p><%= f.check_box :at_liberty %> At Liberty <small>(You will be listed as available for gigs)</p>

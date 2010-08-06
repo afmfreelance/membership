@@ -40,3 +40,12 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+ActiveSupport::CoreExtensions::Date::Conversions::DATE_FORMATS.merge!(
+  :default => '%-1m/%-1d/%Y'
+)
+ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
+  :default => '%I:%M%p',
+  :date_time12  => "%-1m/%-1d/%Y %I:%M%p",
+  :date_time24  => "%-1m/%-1d/%Y %H:%M"
+)

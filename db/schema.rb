@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100804222710) do
+ActiveRecord::Schema.define(:version => 20100804232134) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -117,6 +117,7 @@ ActiveRecord::Schema.define(:version => 20100804222710) do
     t.string   "address2"
     t.string   "state_province_temp"
     t.boolean  "delta",                :default => true, :null => false
+    t.integer  "at_liberty",           :default => 1
   end
 
   create_table "quarters", :force => true do |t|

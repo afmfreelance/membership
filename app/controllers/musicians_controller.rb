@@ -9,7 +9,9 @@ class MusiciansController < ApplicationController
       format.xml  { render :xml => @musicians }
     end
   end
-
+  def local_memberships_index
+    
+  end
   # GET /musicians/1
   # GET /musicians/1.xml
   def show

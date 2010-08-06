@@ -1,11 +1,19 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :memberships
+
   map.resources :instruments
   map.resources :categories
   map.resources :statuses
   map.resources :state_provinces
-  map.resources :locals
+  map.resources :locals#, :has_many => :musicians
   map.resources :countries
-  map.resources :musicians
+  map.resources :musicians do |musicians|
+    musicians.resources :locals do |locals|
+      locals.resources :memberships
+      
+    end
+    #, :controller => :memberships
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 
