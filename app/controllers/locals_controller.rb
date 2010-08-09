@@ -17,6 +17,7 @@ class LocalsController < ApplicationController
     #if redirected from musician->local->memberships page - we showing the memberhsips
     if params[:musician_id] && params[:id]
       @memberships = Membership.find(:all, :include => [:category, :status, :local, :musician], :conditions => ['musician_id = ? and locals.number = ?', params[:musician_id], params[:id]])
+      
       @musician = Musician.find(params[:musician_id])
       @local = Local.find(params[:id])
     else #normal locals view

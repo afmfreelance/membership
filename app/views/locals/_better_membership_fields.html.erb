@@ -1,0 +1,9 @@
+<%# f.object.finish_year = 2011 if f.object.finish_year.blank? %>
+<tr class="fields">
+	<td><%= f.date_select :start, { :start_year => 1900, :end_year => Time.now.year, :order => [:month, :day, :year] } %></td>
+	<td><%= f.collection_select :finish_quarter, Quarter.all, :quarter, :title %></td>
+	<td><%= f.text_field :finish_year, :size => 4 %></td>
+	<td><%= f.collection_select :category_id, Category.all, :id, :name %></td>
+	<td><%= f.collection_select :status_id, Status.all, :id, :name %></td>
+	<td><%= button_to_remove_fields f %></td>
+</tr>

@@ -1,20 +1,30 @@
 <p style="color: green"><%= flash[:notice] %></p>
-<% form_for(@memberships) do |f| %>
+<% form_for(@musician) do |f| %>
 	<table class="fields_list" id="membership_history">
 	  <tr>
 			
-			<th>Admit Date</th>
+			<th>Join Date</th>
 			<th colspan="2">Paid Through</th>
 			<th>Category</th>
 			<th>Status</th>
-	  </tr>		
-		<%= render 'membership_fields', :f => f %>
-
+	  </tr>
+		<% f.fields_for(:memberships, @memberships) do |builder| %>
+			<%= render 'membership_fields', :f => builder %>
+		<% end %>
 	</table>
-	<p style="clear: left"><%#= link_to_function "Add membership" do |page|
-		page.insert_html :bottom, 'membership_history', f      
-	#page[:membership_history].
-	end %>
-	</p>
+	<fieldset>
+			<legend>Locals</legend>
+	
+		
+
+		
+			<ul id="local_list" class="fields_list">
+	 			<% f.fields_for :memberships do |builder| %>
+					<%= render 'membership_fields', :f => builder %>
+				<% end %>
+			</ul>
+			<p style="clear: left"><%= link_to_add_fields "Add Membership", f, :memberships %></p>
+	</fieldset>
+	
 	<p><%= f.submit "Save" %></p>
 <% end %>

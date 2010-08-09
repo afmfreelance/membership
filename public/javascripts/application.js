@@ -31,10 +31,15 @@ function add_fields(link, association, content) {
   //$(link).prev(".fields_list").append(content.replace(regexp, new_id));
   $(link).closest("fieldset").children(".fields_list").append(content.replace(regexp, new_id));
 	
-	//$("#local_list").append(content.replace(regexp, new_id));
 	return false;
 }
-
+function add_membership_fields(link, association, content) {
+  var new_id = new Date().getTime();
+  var regexp = new RegExp("new_" + association, "g")
+ 	
+	$("#membership_history tbody").append(content.replace(regexp, new_id));
+	return false;
+}
 
 	
 
