@@ -2,7 +2,7 @@ class Musician < ActiveRecord::Base
   belongs_to :country
   belongs_to :state_province
   belongs_to :title
-  has_many :locals, :through => :memberships
+  has_many :locals, :through => :memberships, :uniq => true
   has_many :instruments, :through => :musician_instruments, :uniq => true
   has_many :musician_instruments, :dependent => :destroy
   has_many :memberships
