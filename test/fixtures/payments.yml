@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  amount: 1
+  payment_type_id: 1
+  musician_id: 1
+  local_id: 1
+
+two:
+  amount: 1
+  payment_type_id: 1
+  musician_id: 1
+  local_id: 1

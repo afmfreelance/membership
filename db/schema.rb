@@ -9,13 +9,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100804232134) do
+ActiveRecord::Schema.define(:version => 20100818211906) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "sort"
+  end
+
+  create_table "constants", :force => true do |t|
+    t.string   "name"
+    t.string   "thevalue"
+    t.string   "datatype"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "countries", :force => true do |t|
@@ -53,9 +61,12 @@ ActiveRecord::Schema.define(:version => 20100804232134) do
     t.string   "email2"
     t.string   "email3"
     t.integer  "sort_num"
-    t.integer  "lif"
+    t.integer  "lif_in_cents"
     t.string   "fax_number"
-    t.boolean  "delta",             :default => true, :null => false
+    t.boolean  "delta",                    :default => true, :null => false
+    t.integer  "dues_annual_in_cents"
+    t.integer  "dues_quarterly_in_cents"
+    t.integer  "dues_semiannual_in_cents"
   end
 
   create_table "memberships", :force => true do |t|
@@ -118,6 +129,21 @@ ActiveRecord::Schema.define(:version => 20100804232134) do
     t.string   "state_province_temp"
     t.boolean  "delta",                :default => true, :null => false
     t.integer  "at_liberty",           :default => 1
+  end
+
+  create_table "payment_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "payments", :force => true do |t|
+    t.integer  "amount"
+    t.integer  "payment_type_id"
+    t.integer  "musician_id"
+    t.integer  "local_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "quarters", :force => true do |t|

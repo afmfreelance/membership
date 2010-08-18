@@ -24,14 +24,18 @@ class MembershipsController < ApplicationController
   # GET /memberships/new
   # GET /memberships/new.xml
   def new
-    @membership = Membership.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @membership }
-      #format.js { render :partial => "locals/membership_fields" } 
-      
-    end
+    if params[:musician_id]
+      @musician = Musician.find(params[:musician_id])
+      @membership = Membership.new
+      @membership.musician = @musician
+       
+      respond_to do |format|
+        format.html # new.html.erb
+        format.xml  { render :xml => @membership }
+      end
+    else #no member specified
+      #@membership = Membership.new
+    end  
   end
 
   # GET /memberships/1/edit

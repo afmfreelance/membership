@@ -1,0 +1,23 @@
+<p>
+  <b>Amount:</b>
+  <%=h @payment.amount %>
+</p>
+
+<p>
+  <b>Payment type:</b>
+  <%=h @payment.payment_type_id %>
+</p>
+
+<p>
+  <b>Musician:</b>
+  <%=h @payment.musician_id %>
+</p>
+
+<p>
+  <b>Local:</b>
+  <%=h @payment.local_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

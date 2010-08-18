@@ -71,6 +71,22 @@
     <%= f.label :jurisdiction %><br />
     <%= f.text_area :jurisdiction, :rows => 5, :cols => 80 %>
   </p>
+	<p class="multifield">
+		<%= f.label :dues_annual, 'Annual Dues' %><br />
+		<%= f.text_field :dues_annual, :size => 15 %>
+	</p>
+	<p class="multifield">
+		<%= f.label :dues_quarterly, 'Dues If Paid Quarterly' %><br />
+		<%= f.text_field :dues_quarterly, :size => 15 %>
+	</p>
+	<p class="multifield">
+		<%= f.label :dues_semiannual, 'Dues If Paid Semi-Annually' %><br />
+		<%= f.text_field :dues_semiannual, :size => 15 %>
+	</p>
+	<p class="multibreak">
+		<%= f.label :lif, 'Local Initiation Fee' %><br />
+		<%= f.text_field :lif, :size => 15 %>
+	</p>
   <p>
     <%= f.submit form_action %>
   </p>

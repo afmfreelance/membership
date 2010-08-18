@@ -4,4 +4,6 @@
 			<li><%= link_to local.name, musician_local_path(@musician, local) %></li>
 		<% end %>
 	</ul>
+	
 <% end %>
+<%= link_to 'Add membership', new_musician_membership_path(@musician) %>

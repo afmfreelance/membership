@@ -1,4 +1,8 @@
 class Local < ActiveRecord::Base
+  money :dues_annual
+  money :dues_semiannual
+  money :dues_quarterly
+  money :lif
   has_many :musicians, :through => :memberships
   has_many :memberships
   
@@ -6,13 +10,15 @@ class Local < ActiveRecord::Base
   belongs_to :country
   
   before_validation :phone_and_local_strip
+  named_scope :complete, :conditions => 'lif_in_cents IS NOT NULL AND dues_annual_in_cents IS NOT NULL'
   
   default_scope :order => 'sort_num ASC'
   cattr_reader :per_page
   @@per_page = 20
   
-  validates_presence_of :name, :number, :email, :address, :city, :state_province_id, :postal_code, :country_id
+  validates_presence_of :name, :number, :email, :address, :city, :state_province_id, :postal_code, :country_id, :dues_annual, :lif
   validates_uniqueness_of :name, :number
+  
   
   define_index do
    indexes :name, city_state_title, number, city, email
@@ -32,7 +38,11 @@ class Local < ActiveRecord::Base
   end
   
   def short_name
-    self.number 
+    if self.city_state_title
+      self.number + ": " + self.city_state_title
+    else
+      self.number
+    end
   end
   
   def sort_num
@@ -51,7 +61,15 @@ class Local < ActiveRecord::Base
      else
        write_attribute :url, value
      end
-   end
-   
+  end
+  def full_name
+     [first_name, last_name].join(' ')
+  end
+
+  def full_name=(name)
+     split = name.split(' ', 2)
+     self.first_name = split.first
+     self.last_name = split.last
+  end
   
 end

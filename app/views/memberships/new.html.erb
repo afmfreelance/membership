@@ -1,11 +1,33 @@
-<h1>New membership</h1>
+<%- content_for(:head) do -%>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<%= javascript_include_tag 'jquery-ui' -%>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#membership_local_id').change(function(){
+				alert(this.value);
+			});
+		});
+	</script>
+<%- end -%>
+<div id="sidebar">
+	<h2>Maintenance</h2>
+	<ul>
+		<!--><li><%= link_to 'View', @musician %></li>-->
+		<li><%= link_to 'Delete musician', @musician, :confirm => 'Are you sure?', :method => :delete %></li>
+	</ul>
+</div>
+<div id="content">
+  <div id="header">
+    <h1>AFM Membership Framework</h1>
+		<p id="breadcrumbs"><%= link_to 'Home', root_path %> &rarr; <%= link_to 'Musicians', musicians_path %> &rarr; <%= link_to @musician.full_name, edit_musician_path(@musician, :anchor => "membership") %> &rarr; Add Membership
+  </div>
+	<h2>Add Membership</h2>
+	<%- form_for @membership do |f| -%>
+	
+		<p><%= f.label :local_id, 'Local' %> 
+		<%= f.collection_select :local_id, Local.complete, :id, :short_name, :include_blank => true %></p>
+		<p><%= f.submit 'OK' %></p>
+		<%#= f.collection_select :finish_quarter, Quarter.all, :quarter, :title %>
+	<%- end -%>
+</div>
 
-<% form_for(@membership) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', memberships_path %>
