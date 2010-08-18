@@ -25,6 +25,7 @@ class LocalsController < ApplicationController
     end
     respond_to do |format|
       format.html # show.html.erb
+      format.js # show.js.rjs??
       format.xml  { render :xml => @local }
     end
   end
