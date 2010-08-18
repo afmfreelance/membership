@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :memberships
-
   map.resources :instruments
   map.resources :categories
   map.resources :statuses
@@ -10,9 +9,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :musicians do |musicians|
     musicians.resources :locals do |locals|
       locals.resources :memberships
-      
     end
-    #, :controller => :memberships
+    musicians.resources :memberships
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

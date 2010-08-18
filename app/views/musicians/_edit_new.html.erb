@@ -16,6 +16,10 @@
 					});
 	      }
 	  	});
+			$("#tabz").bind("tabsselect", function(event, ui) { 
+			  window.location.hash = ui.tab.hash;
+			});
+			
 		});
 	</script>
 <%- end -%>
@@ -24,10 +28,10 @@
   <%= f.error_messages %>
 	<div id="tabz">
 		<ul>
-	      <li><a href="#general"><span>General</span></a></li>
-	      <li><a href="#contact"><span>Contact Info</span></a></li>
-				<li><a href="#music"><span>Music</span></a></li>
-				<li><a href="#membership"><span>Membership</span></a></li>
+	      <li><a id="general_click" href="#general"><span>General</span></a></li>
+	      <li><a id="contact_click" href="#contact"><span>Contact Info</span></a></li>
+				<li><a id="music_click" href="#music"><span>Music</span></a></li>
+				<li><a id="membership_click" href="#membership"><span>Membership</span></a></li>
 	  </ul>
   
 		<div id="general">
